@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>test on 壹零壹玖</title>
-    <link>https://1019.fun/tags/test/</link>
+    <link>https:///shijianliangs.github.io/tags/test/</link>
     <description>Recent content in test on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Jun 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/test/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 29 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JMeter修改默认配置</title>
-      <link>https://1019.fun/posts/jmeter%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/</link>
+      <link>https:///shijianliangs.github.io/posts/jmeter%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/jmeter%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https:///shijianliangs.github.io/posts/jmeter%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/</guid>
       <description>1. 修改默认语言 修改jmeter.properties文件，将 #language=EN 修改成 language=zh_CN，重启
 2.修改默认内存 修改启动文件jmeter
 : &amp;#34;${HEAP:=&amp;#34;-Xms2g -Xmx4g -XX:MaxMetaspaceSize=2560m&amp;#34;}&amp;#34; </description>
@@ -24,10 +20,10 @@
     
     <item>
       <title>JMeter分布式部署</title>
-      <link>https://1019.fun/posts/jmeter%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2/</link>
+      <link>https:///shijianliangs.github.io/posts/jmeter%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2/</link>
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/jmeter%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2/</guid>
+      <guid>https:///shijianliangs.github.io/posts/jmeter%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2/</guid>
       <description>1. 图解 controller:	192.168.1.1 agent:	192.168.1.2 2. 从机配置 1.指定启动端口
 修改jmeter.properties
 server_port=xxxx server.rmi.localport=xxxx 2.启动jmeter-server
@@ -41,19 +37,19 @@ agent机器日志
     
     <item>
       <title>JMeter5.2命令行选项</title>
-      <link>https://1019.fun/posts/jmeter5.2%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%80%89%E9%A1%B9/</link>
+      <link>https:///shijianliangs.github.io/posts/jmeter5.2%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%80%89%E9%A1%B9/</link>
       <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/jmeter5.2%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%80%89%E9%A1%B9/</guid>
+      <guid>https:///shijianliangs.github.io/posts/jmeter5.2%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%80%89%E9%A1%B9/</guid>
       <description>~/apache-jmeter-5.2/bin/jmeter -? _ ____ _ ____ _ _ _____ _ __ __ _____ _____ _____ ____ / \  | _ \ / \  / ___| | | | ____| | | \/ | ____|_ _| ____| _ \  / _ \ | |_) / _ \| | | |_| | _| _ | | |\/| | _| | | | _| | |_) | / ___ \| __/ ___ \ |___| _ | |___ | |_| | | | | |___ | | | |___| _ &amp;lt; /_/ \_\_| /_/ \_\____|_| |_|_____| \___/|_| |_|_____| |_| |_____|_| \_\ 5.</description>
     </item>
     
     <item>
       <title>JMeter中BeanShell实现请求加解密</title>
-      <link>https://1019.fun/posts/jmeter%E4%B8%ADbeanshell%E5%AE%9E%E7%8E%B0%E8%AF%B7%E6%B1%82%E5%8A%A0%E8%A7%A3%E5%AF%86/</link>
+      <link>https:///shijianliangs.github.io/posts/jmeter%E4%B8%ADbeanshell%E5%AE%9E%E7%8E%B0%E8%AF%B7%E6%B1%82%E5%8A%A0%E8%A7%A3%E5%AF%86/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/jmeter%E4%B8%ADbeanshell%E5%AE%9E%E7%8E%B0%E8%AF%B7%E6%B1%82%E5%8A%A0%E8%A7%A3%E5%AF%86/</guid>
+      <guid>https:///shijianliangs.github.io/posts/jmeter%E4%B8%ADbeanshell%E5%AE%9E%E7%8E%B0%E8%AF%B7%E6%B1%82%E5%8A%A0%E8%A7%A3%E5%AF%86/</guid>
       <description>1. 获取请求数据进行加密 import org.apache.jmeter.config.*; import org.apache.jmeter.protocol.http.sampler.*; import java.util.*; //获取加密前的数据 Arguments arguments = sampler.getArguments(); Argument argument = arguments.getArgument(0); String decrypt_data = argument.getValue(); //加密 String encrypt_data = encrypt(decrypt_data); //将加密好的数据重新设置到参数 argument.setValue(encrypt_data); 2. 获取响应数据进行解密 import com.alibaba.fastjson.*; import java.util.*; //获取响应的值 String response=new String(prev.getResponseData(),&amp;#34;UTF-8&amp;#34;); //解密 String decrypt_response = decrypt(response); //将解密好的数据重新设置到响应 prev.setResponseData(decrypt_response); </description>
     </item>
     

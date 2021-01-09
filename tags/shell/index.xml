@@ -2,30 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shell on 壹零壹玖</title>
-    <link>https://1019.fun/tags/shell/</link>
+    <link>https:///shijianliangs.github.io/tags/shell/</link>
     <description>Recent content in shell on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/shell/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 05 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>shell多进程</title>
-      <link>https://1019.fun/posts/shell%E5%A4%9A%E8%BF%9B%E7%A8%8B/</link>
+      <link>https:///shijianliangs.github.io/posts/shell%E5%A4%9A%E8%BF%9B%E7%A8%8B/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/shell%E5%A4%9A%E8%BF%9B%E7%A8%8B/</guid>
+      <guid>https:///shijianliangs.github.io/posts/shell%E5%A4%9A%E8%BF%9B%E7%A8%8B/</guid>
       <description>echo.sh #!/bin/bash for (( i = 0; i &amp;lt; 10000; i++ )); do echo &amp;#34;process&amp;#34;${1}&amp;#34;的输出&amp;#34;${i}; done start.sh #!/bin/bash for (( i = 0; i &amp;lt; 5; i++ )); do ./echo.sh ${i} &amp;amp; done 执行结果(摘取部分) 几个进程是并发执行的 ... process3的输出9896 process0的输出9641 process0的输出9642 process3的输出9897 process4的输出9876 process0的输出9643 process4的输出9877 process0的输出9644 process4的输出9878 process0的输出9645 process4的输出9879 process0的输出9646 process4的输出9880 process4的输出9881 process4的输出9882 process4的输出9883 process4的输出9884 ... </description>
     </item>
     
     <item>
       <title>shell脚本实现查询进程状态</title>
-      <link>https://1019.fun/posts/shell%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81/</link>
+      <link>https:///shijianliangs.github.io/posts/shell%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81/</link>
       <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/shell%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81/</guid>
+      <guid>https:///shijianliangs.github.io/posts/shell%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81/</guid>
       <description>#!/bin/bash  # 设置需要监控的进程名称 my_array=(&amp;#34;Navicat&amp;#34; &amp;#34;QQ&amp;#34; &amp;#34;MWeb&amp;#34; &amp;#34;aaaaa&amp;#34; ); # 遍历监控的进程 for ((i=0; i &amp;lt; ${#my_array[*]}; i++)) do # 统计进程个数（需排除grep自身的查询进程） count=`ps -ef | grep &amp;#34;${my_array[i]}&amp;#34; | grep -v &amp;#34;grep&amp;#34; | wc -l`; if [ $count != 0 ];then # 绿色字体输出存活进程 echo -e &amp;#34;\033[32m [Alive] ${my_array[i]}\033[0m&amp;#34;; else # 红色字体输出死亡进程 echo -e &amp;#34;\033[31m [Dead] ${my_array[i]}\033[0m&amp;#34;; fi done </description>
     </item>
     

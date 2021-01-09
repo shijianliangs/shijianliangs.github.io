@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>spring on 壹零壹玖</title>
-    <link>https://1019.fun/tags/spring/</link>
+    <link>https:///shijianliangs.github.io/tags/spring/</link>
     <description>Recent content in spring on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Nov 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/spring/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 01 Nov 2018 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/spring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>spring的xml配置</title>
-      <link>https://1019.fun/posts/spring%E7%9A%84xml%E9%85%8D%E7%BD%AE/</link>
+      <link>https:///shijianliangs.github.io/posts/spring%E7%9A%84xml%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/spring%E7%9A%84xml%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https:///shijianliangs.github.io/posts/spring%E7%9A%84xml%E9%85%8D%E7%BD%AE/</guid>
       <description>创建一个Bean applictionContext.xml
 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;beans xmlns=&amp;#34;http://www.springframework.org/schema/beans&amp;#34; xmlns:xsi=&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34; xsi:schemaLocation=&amp;#34;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&amp;#34;&amp;gt; &amp;lt;bean id=&amp;#34;helloWorld&amp;#34; class=&amp;#34;com.study.spring.pojo.HelloWorld&amp;#34;&amp;gt; &amp;lt;property name=&amp;#34;name&amp;#34; value=&amp;#34;china-spring&amp;#34;/&amp;gt; &amp;lt;/bean&amp;gt; &amp;lt;/beans&amp;gt; Bean熟悉值包含特殊字符的处理方式 applictionContext.xml
 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;beans xmlns=&amp;#34;http://www.springframework.org/schema/beans&amp;#34; xmlns:xsi=&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34; xsi:schemaLocation=&amp;#34;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&amp;#34;&amp;gt; &amp;lt;bean id=&amp;#34;car1&amp;#34; class=&amp;#34;com.study.spring.pojo.Car&amp;#34;&amp;gt; &amp;lt;constructor-arg name=&amp;#34;brand&amp;#34; value=&amp;#34;BMW&amp;#34;/&amp;gt; &amp;lt;!-- 如果字面包含特殊字符可以使用 &amp;lt;![CDATA[]]&amp;gt; 包裹--&amp;gt; &amp;lt;!-- 属性值也可以通过 value 子节点进行配置--&amp;gt; &amp;lt;constructor-arg name=&amp;#34;city&amp;#34;&amp;gt;&amp;lt;value&amp;gt;&amp;lt;![CDATA[&amp;lt;Beijing&amp;#39;&amp;gt;]]&amp;gt;&amp;lt;/value&amp;gt;&amp;lt;/constructor-arg&amp;gt; &amp;lt;constructor-arg name=&amp;#34;price&amp;#34; value=&amp;#34;1000000&amp;#34;/&amp;gt; &amp;lt;constructor-arg name=&amp;#34;maxSpeed&amp;#34; value=&amp;#34;300&amp;#34;/&amp;gt; &amp;lt;/bean&amp;gt; &amp;lt;/beans&amp;gt; Bean引用 applictionContext.xml

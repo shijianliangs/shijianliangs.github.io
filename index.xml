@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>壹零壹玖</title>
-    <link>https://1019.fun/</link>
+    <link>https:///shijianliangs.github.io/</link>
     <description>Recent content on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 20 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://1019.fun/about/</link>
+      <link>https:///shijianliangs.github.io/about/</link>
       <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/about/</guid>
+      <guid>https:///shijianliangs.github.io/about/</guid>
       <description>关于我 测试工程师，上海。
 联系我 shijianliangs@gmail.com
 友情链接  One Blog 派森 FenceX的技术博客  </description>
@@ -24,10 +20,10 @@
     
     <item>
       <title>记录一次http升级https</title>
-      <link>https://1019.fun/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1http%E5%8D%87%E7%BA%A7https/</link>
+      <link>https:///shijianliangs.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1http%E5%8D%87%E7%BA%A7https/</link>
       <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1http%E5%8D%87%E7%BA%A7https/</guid>
+      <guid>https:///shijianliangs.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1http%E5%8D%87%E7%BA%A7https/</guid>
       <description>问题 解决如图问题。ps:我的是 Nginx 服务器。
 解决 1. 腾讯云申请一个免费的SSL证书 https://buy.cloud.tencent.com/ssl?fromSource=ssl 接下来等待审核
 等了大概20分钟，速度还是很快的&amp;hellip;
@@ -37,19 +33,19 @@
     
     <item>
       <title>Django模型进行Mysql操作</title>
-      <link>https://1019.fun/posts/django%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8Cmysql%E6%93%8D%E4%BD%9C/</link>
+      <link>https:///shijianliangs.github.io/posts/django%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8Cmysql%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/django%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8Cmysql%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https:///shijianliangs.github.io/posts/django%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8Cmysql%E6%93%8D%E4%BD%9C/</guid>
       <description># 模型类 class Student(models.Model): id = models.AutoField(primary_key = True) name = models.CharField(max_length = 32) age = models.IntegerField(blank = True) # 增 stu = Student(name = &amp;#39;Bob&amp;#39;, age = 10) stu.save() # 删 Student.objects.filter(name = &amp;#39;Bob&amp;#39;).delete() # 改 Student.objects.filter(name = &amp;#39;Bob&amp;#39;).update(&amp;#39;age&amp;#39; = 12) # 查 Student.objects.filter(name = &amp;#39;Bob&amp;#39;) </description>
     </item>
     
     <item>
       <title>mac的charles抓包</title>
-      <link>https://1019.fun/posts/mac%E7%9A%84charles%E6%8A%93%E5%8C%85/</link>
+      <link>https:///shijianliangs.github.io/posts/mac%E7%9A%84charles%E6%8A%93%E5%8C%85/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mac%E7%9A%84charles%E6%8A%93%E5%8C%85/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mac%E7%9A%84charles%E6%8A%93%E5%8C%85/</guid>
       <description>1.Mac端查看代理机IP &amp;amp; 端口 查看路径
 Help&amp;gt;SSL Proxying&amp;gt;Install Charles Certificate on a Mobile Device or Remote Browser
 如下图查看到的代理机的ip:端口为172.17.106.135:8888 2. Mac端设置抓取https 查看路径Proxy-&amp;gt;SSL Proxy Settings-&amp;gt;Add
@@ -61,29 +57,29 @@ Port：443
     
     <item>
       <title>pytest中引入Django环境</title>
-      <link>https://1019.fun/posts/pytest%E4%B8%AD%E5%BC%95%E5%85%A5django%E7%8E%AF%E5%A2%83/</link>
+      <link>https:///shijianliangs.github.io/posts/pytest%E4%B8%AD%E5%BC%95%E5%85%A5django%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/pytest%E4%B8%AD%E5%BC%95%E5%85%A5django%E7%8E%AF%E5%A2%83/</guid>
+      <guid>https:///shijianliangs.github.io/posts/pytest%E4%B8%AD%E5%BC%95%E5%85%A5django%E7%8E%AF%E5%A2%83/</guid>
       <description>常常在执行pytest单元测试的时候，找不到module，是因为没有引入Django的环境变量。需要单独引入，方法如下：
 import os import django def test(): os.environ.setdefault(&amp;#39;DJANGO_SETTINGS_MODULE&amp;#39;, &amp;#39;your_project.settings&amp;#39;) django.setup() from xxx.xxx import xxx </description>
     </item>
     
     <item>
       <title>mac的launchpad设置</title>
-      <link>https://1019.fun/posts/mac%E7%9A%84launchpad%E8%AE%BE%E7%BD%AE/</link>
+      <link>https:///shijianliangs.github.io/posts/mac%E7%9A%84launchpad%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mac%E7%9A%84launchpad%E8%AE%BE%E7%BD%AE/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mac%E7%9A%84launchpad%E8%AE%BE%E7%BD%AE/</guid>
       <description>设置 Launchpad 列数 defaults write com.apple.dock springboard-columns -int X 设置 Launchpad 行数 defaults write com.apple.dock springboard-rows -int Y 设置之后需要重启 killall Dock </description>
     </item>
     
     <item>
       <title>记录一次mac权限修复</title>
-      <link>https://1019.fun/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1mac%E6%9D%83%E9%99%90%E4%BF%AE%E5%A4%8D/</link>
+      <link>https:///shijianliangs.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1mac%E6%9D%83%E9%99%90%E4%BF%AE%E5%A4%8D/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1mac%E6%9D%83%E9%99%90%E4%BF%AE%E5%A4%8D/</guid>
+      <guid>https:///shijianliangs.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1mac%E6%9D%83%E9%99%90%E4%BF%AE%E5%A4%8D/</guid>
       <description>问题 手欠执行了sudo chmod -R 664 /usr 直接导致shell命令无法执行，重启后无法进入系统
 恢复模式 首先想到的方式是重装系统，reboot，按住command+R进入恢复模式
 竟然看到了“时间机器”&amp;hellip;..
@@ -108,55 +104,55 @@ chmod u+s usr/bin/sudo 之后就变成这个样子了
     
     <item>
       <title>sqlmap常用命令</title>
-      <link>https://1019.fun/posts/sqlmap%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https:///shijianliangs.github.io/posts/sqlmap%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/sqlmap%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https:///shijianliangs.github.io/posts/sqlmap%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>基本信息 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5（5代表level,0-5） 所有dbs sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5 --dbs 所有用户 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5 —users 当前使用的db sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5 --current-db 当前用户 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5 --current-user 某个库所有表名 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 1 -D test —tables 某个表所有列名 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 0 -D test -T deskstatus —columns 某个表所有数据 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 0 -D test -T deskstatus —dump 获取密码 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; --passwords 获取指定用户密码 sqlmap -u &amp;#34;http://localhost/test.</description>
     </item>
     
     <item>
       <title>go的交叉编译</title>
-      <link>https://1019.fun/posts/go%E7%9A%84%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</link>
+      <link>https:///shijianliangs.github.io/posts/go%E7%9A%84%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/go%E7%9A%84%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</guid>
+      <guid>https:///shijianliangs.github.io/posts/go%E7%9A%84%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</guid>
       <description>linux 64-bit CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build xxx.go windows 64-bit CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build xxx.go mac 64-bit CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build xxx.go 参考 https://blog.csdn.net/panshiqu/article/details/53788067</description>
     </item>
     
     <item>
       <title>mac安装php之ssh2_shell扩展</title>
-      <link>https://1019.fun/posts/mac%E5%AE%89%E8%A3%85php%E4%B9%8Bssh2_shell%E6%89%A9%E5%B1%95/</link>
+      <link>https:///shijianliangs.github.io/posts/mac%E5%AE%89%E8%A3%85php%E4%B9%8Bssh2_shell%E6%89%A9%E5%B1%95/</link>
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mac%E5%AE%89%E8%A3%85php%E4%B9%8Bssh2_shell%E6%89%A9%E5%B1%95/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mac%E5%AE%89%E8%A3%85php%E4%B9%8Bssh2_shell%E6%89%A9%E5%B1%95/</guid>
       <description>问题 Error : Class &amp;#39;ssh2_connect&amp;#39; not found 通过源码安装 wget https://pecl.php.net/get/ssh2-1.1.2.tgz tar -zxvf ssh2-1.1.2.tgz cd ssh2-1.1.2 phpize ./configure --with-ssh2 make make install 配置php.ini extensions=ssh2.so 校验 ~ » php -m | grep ssh2 ssh2 </description>
     </item>
     
     <item>
       <title>Django设置允许跨域请求</title>
-      <link>https://1019.fun/posts/django%E8%AE%BE%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</link>
+      <link>https:///shijianliangs.github.io/posts/django%E8%AE%BE%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</link>
       <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/django%E8%AE%BE%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</guid>
+      <guid>https:///shijianliangs.github.io/posts/django%E8%AE%BE%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</guid>
       <description>1. 安装django-cors-headers pip install django-cors-headers 2. 修改settings.py文件 # Step 1 INSTALLED_APPS = [ ... &amp;#39;corsheaders&amp;#39; # cors ] # Step 2 MIDDLEWARE = [ ... &amp;#39;corsheaders.middleware.CorsMiddleware&amp;#39;, &amp;#39;django.middleware.common.CommonMiddleware&amp;#39;, ... # &amp;#39;django.middleware.csrf.CsrfViewMiddleware&amp;#39;, ] # Step3 ALLOWED_HOSTS = [ &amp;#39;*&amp;#39;, ] CORS_ALLOW_CREDENTIALS = True CORS_ORIGIN_ALLOW_ALL = True CORS_ALLOW_HEADERS = (&amp;#39;*&amp;#39;) </description>
     </item>
     
     <item>
       <title>Python常用字符串操作</title>
-      <link>https://1019.fun/posts/python%E5%B8%B8%E7%94%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/</link>
+      <link>https:///shijianliangs.github.io/posts/python%E5%B8%B8%E7%94%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/python%E5%B8%B8%E7%94%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https:///shijianliangs.github.io/posts/python%E5%B8%B8%E7%94%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/</guid>
       <description> 切割字符串  a = &amp;#39;a/b/c/d/e/f&amp;#39; a_dict = a.split(&amp;#39;/&amp;#39;) print(a_dict) # 执行结果:[&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;c&amp;#39;, &amp;#39;d&amp;#39;, &amp;#39;e&amp;#39;, &amp;#39;f&amp;#39;] </description>
     </item>
     
     <item>
       <title>Django实现服务端接口</title>
-      <link>https://1019.fun/posts/django%E5%AE%9E%E7%8E%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8E%A5%E5%8F%A3/</link>
+      <link>https:///shijianliangs.github.io/posts/django%E5%AE%9E%E7%8E%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8E%A5%E5%8F%A3/</link>
       <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/django%E5%AE%9E%E7%8E%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8E%A5%E5%8F%A3/</guid>
+      <guid>https:///shijianliangs.github.io/posts/django%E5%AE%9E%E7%8E%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8E%A5%E5%8F%A3/</guid>
       <description>为什么要学习Django？  软件测试人员该学习 Python 的七个理由 Django是当前Python世界里最负盛名且最成熟的Web框架  基于以上两点，决定学习下这个比较火的Python框架
 安装配置 1. 安装Django pip install Django 2. 新建Django项目 django-admin startproject demo 3. 创建应用和接口 新建 hello 应用
 python manage.py startapp hello 应用创建成功后，在 demo 项目生成 hello 目录
@@ -166,19 +162,19 @@ from django.http import JsonResponse def hello(request): return JsonResponse({&a
     
     <item>
       <title>golang_http_client_demo</title>
-      <link>https://1019.fun/posts/golang_http_client_demo/</link>
+      <link>https:///shijianliangs.github.io/posts/golang_http_client_demo/</link>
       <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/golang_http_client_demo/</guid>
+      <guid>https:///shijianliangs.github.io/posts/golang_http_client_demo/</guid>
       <description>golang http client demo package main import ( &amp;#34;crypto/tls&amp;#34; &amp;#34;encoding/json&amp;#34; &amp;#34;fmt&amp;#34; &amp;#34;io/ioutil&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;net/url&amp;#34; &amp;#34;strings&amp;#34; &amp;#34;time&amp;#34; ) func main() { // simple Get 	response, err := http.Get(&amp;#34;https://www.baidu.com&amp;#34;) if err != nil { fmt.Println(err) } defer response.Body.Close() bytes, err := ioutil.ReadAll(response.Body) if err != nil { fmt.Println(err) } contents := string(bytes) fmt.Println(contents) // simple Post Form 	params := url.Values{ &amp;#34;P1&amp;#34;: {&amp;#34;p1&amp;#34;}, &amp;#34;P2&amp;#34;: {&amp;#34;p2&amp;#34;}, } response, err = http.Post(&amp;#34;https://www.baidu.com&amp;#34;, &amp;#34;application/x-www-form-urlencoded&amp;#34;, strings.</description>
     </item>
     
     <item>
       <title>Mybatis自定义结果映射规则</title>
-      <link>https://1019.fun/posts/mybatis%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%93%E6%9E%9C%E6%98%A0%E5%B0%84%E8%A7%84%E5%88%99/</link>
+      <link>https:///shijianliangs.github.io/posts/mybatis%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%93%E6%9E%9C%E6%98%A0%E5%B0%84%E8%A7%84%E5%88%99/</link>
       <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mybatis%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%93%E6%9E%9C%E6%98%A0%E5%B0%84%E8%A7%84%E5%88%99/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mybatis%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%93%E6%9E%9C%E6%98%A0%E5%B0%84%E8%A7%84%E5%88%99/</guid>
       <description>问题 在实际业务处理规则中，数据库的列名和对象的属性名不一致如何处理呢？
 解决方式 1.通过开启Mybatis配置文件开启自动驼峰命名规则 适用于满足A_COLUNM/aColumn的对应规则的
 &amp;lt;setting name=&amp;#34;mapUnderscoreToCamelCase&amp;#34; value=&amp;#34;true&amp;#34;/&amp;gt; 2.自定义结果映射规则 针对不能满足A_COLUNM/aColumn的对应规则的
@@ -188,20 +184,20 @@ from django.http import JsonResponse def hello(request): return JsonResponse({&a
     
     <item>
       <title>proxychains让你的terminal健步如飞</title>
-      <link>https://1019.fun/posts/proxychains%E8%AE%A9%E4%BD%A0%E7%9A%84terminal%E5%81%A5%E6%AD%A5%E5%A6%82%E9%A3%9E/</link>
+      <link>https:///shijianliangs.github.io/posts/proxychains%E8%AE%A9%E4%BD%A0%E7%9A%84terminal%E5%81%A5%E6%AD%A5%E5%A6%82%E9%A3%9E/</link>
       <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/proxychains%E8%AE%A9%E4%BD%A0%E7%9A%84terminal%E5%81%A5%E6%AD%A5%E5%A6%82%E9%A3%9E/</guid>
+      <guid>https:///shijianliangs.github.io/posts/proxychains%E8%AE%A9%E4%BD%A0%E7%9A%84terminal%E5%81%A5%E6%AD%A5%E5%A6%82%E9%A3%9E/</guid>
       <description>安装前 shijl:~ shijl$ wget www.google.com --2019-06-20 11:29:15-- http://www.google.com/ Resolving www.google.com (www.google.com)... 69.171.248.128 Connecting to www.google.com (www.google.com)|69.171.248.128|:80... failed: Operation timed out. 安装 brew install proxychains-ng 配置 编辑/usr/local/etc/proxychains.conf文件,最后一行添加
 socks5 127.0.0.1 1080 测试 shijl:~ shijl$ proxychains4 wget www.google.com [proxychains] config file found: /usr/local/etc/proxychains.conf [proxychains] preloading /usr/local/Cellar/proxychains-ng/4.14/lib/libproxychains4.dylib [proxychains] DLL init: proxychains-ng 4.14 --2019-06-20 11:37:50-- http://www.google.com/ Resolving www.google.com (www.google.com)... 224.0.0.1 Connecting to www.google.com (www.google.com)|224.0.0.1|:80... [proxychains] Strict chain ... 127.0.0.1:1080 ... www.google.com:80 ... OK connected. HTTP request sent, awaiting response.</description>
     </item>
     
     <item>
       <title>如何将自己的域名CNAME到github.io</title>
-      <link>https://1019.fun/posts/%E5%A6%82%E4%BD%95%E5%B0%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8Dcname%E5%88%B0github.io/</link>
+      <link>https:///shijianliangs.github.io/posts/%E5%A6%82%E4%BD%95%E5%B0%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8Dcname%E5%88%B0github.io/</link>
       <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/%E5%A6%82%E4%BD%95%E5%B0%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8Dcname%E5%88%B0github.io/</guid>
+      <guid>https:///shijianliangs.github.io/posts/%E5%A6%82%E4%BD%95%E5%B0%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8Dcname%E5%88%B0github.io/</guid>
       <description>问题 将自己的域名CNAME到github.io
 解决   在shijianliangs.github.io的根目录下添加CNAME文件，写入你自己的域名
  注意这里只可以添加一个域名
@@ -213,10 +209,10 @@ socks5 127.0.0.1 1080 测试 shijl:~ shijl$ proxychains4 wget www.google.com [pr
     
     <item>
       <title>搭建自己的slide文件解析服务器</title>
-      <link>https://1019.fun/posts/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84slide%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https:///shijianliangs.github.io/posts/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84slide%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84slide%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https:///shijianliangs.github.io/posts/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84slide%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>1.安装golang apt install golang 2.安装talksapp go get github.com/golang/gddo/talksapp 3.下载google sdk并解压 wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-245.0.0-linux-x86_64.tar.gz tar -zxvf google-cloud-sdk-245.0.0-linux-x86_64.tar.gz 4.执行自动安装程序 ./google-cloud-sdk/install.sh 5.初始化 ./google-cloud-sdk/bin/gcloud init 6.执行talksapp安装脚本 先进入子目录再执行安装，否则会报错
 cd go/src/github.com/golang/gddo/talksapp/;./setup.sh 7.启动服务 google-cloud-sdk/bin/dev_appserver.py go/src/github.com/golang/gddo/talksapp/ 这个时候就可以解析托管在github的.slide文件了
 https://www.shijianliang.cn/github.com/shijianliangs/gotalks/demo.slide
@@ -225,38 +221,38 @@ https://www.shijianliang.cn/github.com/shijianliangs/gotalks/demo.slide
     
     <item>
       <title>MongoDB常用命令</title>
-      <link>https://1019.fun/posts/mongodb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https:///shijianliangs.github.io/posts/mongodb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mongodb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mongodb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>常用命令  显示数据库列表  show dbs  选择数据库  use db_name  显示当前库中所有的collection  show collections 参考 https://www.jianshu.com/p/0a52c672ae78</description>
     </item>
     
     <item>
       <title>mac安装php的redis插件</title>
-      <link>https://1019.fun/posts/mac%E5%AE%89%E8%A3%85php%E7%9A%84redis%E6%8F%92%E4%BB%B6/</link>
+      <link>https:///shijianliangs.github.io/posts/mac%E5%AE%89%E8%A3%85php%E7%9A%84redis%E6%8F%92%E4%BB%B6/</link>
       <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mac%E5%AE%89%E8%A3%85php%E7%9A%84redis%E6%8F%92%E4%BB%B6/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mac%E5%AE%89%E8%A3%85php%E7%9A%84redis%E6%8F%92%E4%BB%B6/</guid>
       <description>mac安装php的redis插件 执行连接redis的操作遇到报错:
 Fatal error&amp;lt;/b&amp;gt;: Uncaught Error: Class &amp;#39;RedisCluster&amp;#39; not found in... 安装  下载php-redis curl -O https://nodeload.github.com/nicolasff/phpredis/zip/master  解压 unzip phpredis-master.zip &amp;amp;&amp;amp; cd phpredis-master  动态安装 phpize  编译 ./configure  安装 make &amp;amp;&amp;amp; make install  修改php.ini,插入: extension=redis.so  重启php-fpm 查看是否安装成功 shijl:7.4 shijl$ php -m | grep redis redis   参考： https://panxu.net/article/8400.html</description>
     </item>
     
     <item>
       <title>pymysql常用操作</title>
-      <link>https://1019.fun/posts/pymysql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+      <link>https:///shijianliangs.github.io/posts/pymysql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/pymysql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https:///shijianliangs.github.io/posts/pymysql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
       <description>安装 pip install pymysql Demo import pymysql def test(): # 新建连接 connection = pymysql.connect(host = &amp;#39;localhost&amp;#39;, port = 3306, user = &amp;#39;root&amp;#39;, password = &amp;#39;root&amp;#39;, database = &amp;#39;django_demo&amp;#39;, charset = &amp;#39;utf8&amp;#39;) connection.autocommit() # 开启自动commit cursor = connection.cursor(cursor = pymysql.cursors.DictCursor) # cursor = pymysql.cursors.DictCursor用来指定按键值对返回查询结果 # 查询 cursor.execute(&amp;#39;SELECT * FROM django_content_type LIMIT 1000&amp;#39;) ones = cursor.fetchall() print(ones) # 插入 cursor.execute(&amp;#39;insert xxx (...) values (...)&amp;#39;) # 若不开启自动commit，则每个除查询的之外的操作都需要单独commit connection.commit() # 关闭连接 connection.close() </description>
     </item>
     
     <item>
       <title>proxifier排错</title>
-      <link>https://1019.fun/posts/proxifier%E6%8E%92%E9%94%99/</link>
+      <link>https:///shijianliangs.github.io/posts/proxifier%E6%8E%92%E9%94%99/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/proxifier%E6%8E%92%E9%94%99/</guid>
+      <guid>https:///shijianliangs.github.io/posts/proxifier%E6%8E%92%E9%94%99/</guid>
       <description>环境 SSH Tunnel + Proxifier
 报错 ssh root@192.168.1.5 ssh_exchange_identification: read: Connection reset by peer 解决 Proxifier 中配置了所有 Applications 都走代理，未排除 SSH Tunnel，导致ssh连接错误
 新增 rule，让SSH Tunnel直接连接，不走代理</description>
@@ -264,19 +260,19 @@ Fatal error&amp;lt;/b&amp;gt;: Uncaught Error: Class &amp;#39;RedisCluster&amp;#
     
     <item>
       <title>shell多进程</title>
-      <link>https://1019.fun/posts/shell%E5%A4%9A%E8%BF%9B%E7%A8%8B/</link>
+      <link>https:///shijianliangs.github.io/posts/shell%E5%A4%9A%E8%BF%9B%E7%A8%8B/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/shell%E5%A4%9A%E8%BF%9B%E7%A8%8B/</guid>
+      <guid>https:///shijianliangs.github.io/posts/shell%E5%A4%9A%E8%BF%9B%E7%A8%8B/</guid>
       <description>echo.sh #!/bin/bash for (( i = 0; i &amp;lt; 10000; i++ )); do echo &amp;#34;process&amp;#34;${1}&amp;#34;的输出&amp;#34;${i}; done start.sh #!/bin/bash for (( i = 0; i &amp;lt; 5; i++ )); do ./echo.sh ${i} &amp;amp; done 执行结果(摘取部分) 几个进程是并发执行的 ... process3的输出9896 process0的输出9641 process0的输出9642 process3的输出9897 process4的输出9876 process0的输出9643 process4的输出9877 process0的输出9644 process4的输出9878 process0的输出9645 process4的输出9879 process0的输出9646 process4的输出9880 process4的输出9881 process4的输出9882 process4的输出9883 process4的输出9884 ... </description>
     </item>
     
     <item>
       <title>JMeter修改默认配置</title>
-      <link>https://1019.fun/posts/jmeter%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/</link>
+      <link>https:///shijianliangs.github.io/posts/jmeter%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/jmeter%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https:///shijianliangs.github.io/posts/jmeter%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/</guid>
       <description>1. 修改默认语言 修改jmeter.properties文件，将 #language=EN 修改成 language=zh_CN，重启
 2.修改默认内存 修改启动文件jmeter
 : &amp;#34;${HEAP:=&amp;#34;-Xms2g -Xmx4g -XX:MaxMetaspaceSize=2560m&amp;#34;}&amp;#34; </description>
@@ -284,10 +280,10 @@ Fatal error&amp;lt;/b&amp;gt;: Uncaught Error: Class &amp;#39;RedisCluster&amp;#
     
     <item>
       <title>JMeter分布式部署</title>
-      <link>https://1019.fun/posts/jmeter%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2/</link>
+      <link>https:///shijianliangs.github.io/posts/jmeter%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2/</link>
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/jmeter%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2/</guid>
+      <guid>https:///shijianliangs.github.io/posts/jmeter%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2/</guid>
       <description>1. 图解 controller:	192.168.1.1 agent:	192.168.1.2 2. 从机配置 1.指定启动端口
 修改jmeter.properties
 server_port=xxxx server.rmi.localport=xxxx 2.启动jmeter-server
@@ -301,19 +297,19 @@ agent机器日志
     
     <item>
       <title>vim快捷键</title>
-      <link>https://1019.fun/posts/vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <link>https:///shijianliangs.github.io/posts/vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <guid>https:///shijianliangs.github.io/posts/vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description> 移动到当前行首: ^/0 移到到当前行尾: $ 移动到下一行行尾:1$ 移动到下n行行尾:n$ 移动到文件第一行:gg 移动到文件最后一行:GG 显示行号:set nu 跳转指定行:n  </description>
     </item>
     
     <item>
       <title>Mybatis增删改查</title>
-      <link>https://1019.fun/posts/mybatis%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</link>
+      <link>https:///shijianliangs.github.io/posts/mybatis%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mybatis%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mybatis%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</guid>
       <description>测试数据准备 DROP TABLE IF EXISTS `student`; CREATE TABLE `student` ( `id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT &amp;#39;&amp;#39;, `age` int(11) NOT NULL DEFAULT &amp;#39;0&amp;#39;, `gender` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT &amp;#39;&amp;#39;, PRIMARY KEY (`id`) ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin; Mybatis的安装配置 1.安装（Maven直接引用） &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.mybatis&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;mybatis&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;x.x.x&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 版本:https://github.com/mybatis/mybatis-3/releases
 2.配置 resource/mybatis/jdbc.properties
 username=root password=root driver=com.mysql.cj.jdbc.Driver url=jdbc:mysql://localhost:3306/study resource/mybatis/mybatis-config.xml
@@ -322,29 +318,29 @@ username=root password=root driver=com.mysql.cj.jdbc.Driver url=jdbc:mysql://loc
     
     <item>
       <title>git常用命令</title>
-      <link>https://1019.fun/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https:///shijianliangs.github.io/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>初始化远程仓库 git init; git remote add origin https://github.com/xxxx/xxx.git 强制覆盖本地分支 git fetch --all git reset --hard origin/master git pull 删除已在远程仓库的.ignore文件 git rm -r --cached app/build #删除目录 git commit -m”rm app/build” git push # 然后再将需要新增的ignore文件加入.ignore中提交 </description>
+      <guid>https:///shijianliangs.github.io/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>初始化远程仓库 git init; git remote add origin https://github.com/xxxx/xxx.git 强制覆盖本地分支 git fetch --all git reset --hard origin/master git pull 删除已在远程仓库的.ignore文件 git rm -r --cached app/build #删除目录  git commit -m”rm app/build” git push # 然后再将需要新增的ignore文件加入.ignore中提交 </description>
     </item>
     
     <item>
       <title>php-fpm以root用户启动报错</title>
-      <link>https://1019.fun/posts/php-fpm%E4%BB%A5root%E7%94%A8%E6%88%B7%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99/</link>
+      <link>https:///shijianliangs.github.io/posts/php-fpm%E4%BB%A5root%E7%94%A8%E6%88%B7%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99/</link>
       <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/php-fpm%E4%BB%A5root%E7%94%A8%E6%88%B7%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99/</guid>
+      <guid>https:///shijianliangs.github.io/posts/php-fpm%E4%BB%A5root%E7%94%A8%E6%88%B7%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99/</guid>
       <description>报错如下 -bash-4.2# ./opt/remi/php73/root/usr/sbin/php-fpm [21-Oct-2019 16:49:26] ERROR: [pool www] please specify user and group other than root [21-Oct-2019 16:49:26] ERROR: FPM initialization failed 解决 启动添加-R参数
 -bash-4.2# sudo ./opt/remi/php73/root/usr/sbin/php-fpm -R </description>
     </item>
     
     <item>
       <title>TestNG传参的几种方式</title>
-      <link>https://1019.fun/posts/testng%E4%BC%A0%E5%8F%82%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</link>
+      <link>https:///shijianliangs.github.io/posts/testng%E4%BC%A0%E5%8F%82%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/testng%E4%BC%A0%E5%8F%82%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</guid>
+      <guid>https:///shijianliangs.github.io/posts/testng%E4%BC%A0%E5%8F%82%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</guid>
       <description>1.通过Xml文件传参 TestNg.java
 package com.test; import org.testng.annotations.Parameters; import org.testng.annotations.Test; public class TestNG { @Parameters({&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;}) @Test public static void testNG(String a, String b) { System.out.println(a); System.out.println(b); } } testNG.xml
 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&amp;lt;!DOCTYPE suite SYSTEM &amp;#34;http://testng.org/testng-1.0.dtd&amp;#34; &amp;gt; &amp;lt;suite name=&amp;#34;test&amp;#34;&amp;gt; &amp;lt;!-- 参数配置 --&amp;gt; &amp;lt;parameter name=&amp;#34;a&amp;#34; value=&amp;#34;aaa&amp;#34;/&amp;gt; &amp;lt;parameter name=&amp;#34;b&amp;#34; value=&amp;#34;bbb&amp;#34;/&amp;gt; &amp;lt;!-- 执行测试 --&amp;gt; &amp;lt;test name=&amp;#34;test&amp;#34;&amp;gt;&amp;lt;classes&amp;gt;&amp;lt;class name=&amp;#34;com.test.TestNG&amp;#34;/&amp;gt;&amp;lt;/classes&amp;gt;&amp;lt;/test&amp;gt; &amp;lt;/suite&amp;gt; 执行结果：
@@ -353,10 +349,10 @@ aaa bbb 2.通过@DataProvider传参 package com.test; import org.testng.annotati
     
     <item>
       <title>caddy&#43;php环境搭建</title>
-      <link>https://1019.fun/posts/caddy&#43;php%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <link>https:///shijianliangs.github.io/posts/caddy&#43;php%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/caddy&#43;php%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https:///shijianliangs.github.io/posts/caddy&#43;php%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>什么是caddy？ Caddy服务器（或称Caddy Web）是一个开源的，使用 Golang 编写，支持 HTTP/2 的 Web 服务端。它使用 Golang 标准库提供 HTTP 功能。
 caddy的特性 caddy的部署 1.安装php brew install php@7.2 2.安装caddy curl https://getcaddy.com | bash -s personal 3.配置Caddy文件 Caddyfile
 # 域名解析方式 # caddy会自动帮助申请证书，可以https访问，无需配置 www.1019.fun { root /home/ubuntu/www.1019.fun log /home/ubuntu/www.1019.fun/access.log errors /home/ubuntu/www.1019.fun/errors.log # PHP-FPM Configuration for Caddy fastcgi / localhost:9000 php } # ip方式 :9001 { root /Users/shijl/GitBook/Library/Import/gbook1/_book log /Users/shijl/Downloads/gbook1_access.log errors /Users/shijl/Downloads/gbook1_errors.log # PHP-FPM Configuration for Caddy fastcgi / localhost:9000 php } 4.</description>
@@ -364,19 +360,19 @@ caddy的特性 caddy的部署 1.安装php brew install php@7.2 2.安装caddy cur
     
     <item>
       <title>Mybatis全局配置文件的常用配置</title>
-      <link>https://1019.fun/posts/mybatis%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
+      <link>https:///shijianliangs.github.io/posts/mybatis%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mybatis%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mybatis%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
       <description>&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34; ?&amp;gt; &amp;lt;!DOCTYPE configuration PUBLIC &amp;#34;-//mybatis.org//DTD Config 3.0//EN&amp;#34; &amp;#34;http://mybatis.org/dtd/mybatis-3-config.dtd&amp;#34;&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;!-- 引用配置文件 --&amp;gt; &amp;lt;properties resource=&amp;#34;mybatis/jdbc.properties&amp;#34;/&amp;gt; &amp;lt;!-- 设置 --&amp;gt; &amp;lt;settings&amp;gt; &amp;lt;!-- 是否开启自动驼峰命名规则（camel case）映射，即从经典数据库列名 A_COLUMN 到经典 Java 属性名 aColumn 的类似映射。（默认false）--&amp;gt; &amp;lt;setting name=&amp;#34;mapUnderscoreToCamelCase&amp;#34; value=&amp;#34;true&amp;#34;/&amp;gt; &amp;lt;!-- 全局地开启或关闭配置文件中的所有映射器已经配置的任何缓存（默认true） --&amp;gt; &amp;lt;setting name=&amp;#34;cacheEnabled&amp;#34; value=&amp;#34;true&amp;#34;/&amp;gt; &amp;lt;!-- 设置超时时间，它决定驱动等待数据库响应的秒数。(默认null) --&amp;gt; &amp;lt;setting name=&amp;#34;defaultStatementTimeout&amp;#34; value=&amp;#34;10&amp;#34;/&amp;gt; &amp;lt;!-- 懒加载： aggressiveLazyLoading 或 collection 在进行分步查询时， 若使用到级联对象的属性，则进行查询 若未使用到级联对象的属性，则不进行查询 --&amp;gt; &amp;lt;setting name=&amp;#34;lazyLoadingEnabled&amp;#34; value=&amp;#34;true&amp;#34;/&amp;gt; &amp;lt;setting name=&amp;#34;aggressiveLazyLoading&amp;#34; value=&amp;#34;false&amp;#34;/&amp;gt; &amp;lt;/settings&amp;gt; &amp;lt;!-- 别名,别名不区分大小写 --&amp;gt; &amp;lt;typeAliases&amp;gt; &amp;lt;!-- 别名: 默认 alias = 类名小写 ，也可自定义--&amp;gt; &amp;lt;typeAlias type=&amp;#34;com.</description>
     </item>
     
     <item>
       <title>AOP</title>
-      <link>https://1019.fun/posts/aop/</link>
+      <link>https:///shijianliangs.github.io/posts/aop/</link>
       <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/aop/</guid>
+      <guid>https:///shijianliangs.github.io/posts/aop/</guid>
       <description>1.使用注解方式配置AOP applicationContext-aop.xml
 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;beans xmlns=&amp;#34;http://www.springframework.org/schema/beans&amp;#34; xmlns:xsi=&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34; xmlns:context=&amp;#34;http://www.springframework.org/schema/context&amp;#34; xmlns:aop=&amp;#34;http://www.springframework.org/schema/aop&amp;#34; xsi:schemaLocation=&amp;#34;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd&amp;#34;&amp;gt; &amp;lt;!-- 配置自动扫描的包 --&amp;gt; &amp;lt;context:component-scan base-package=&amp;#34;com.study.spring2.aop.impl&amp;#34;/&amp;gt; &amp;lt;!-- 使 Aspect 注解起作用：自动为匹配的类生成代理对象 --&amp;gt; &amp;lt;aop:aspectj-autoproxy/&amp;gt; &amp;lt;/beans&amp;gt; Calculator.java
 package com.study.spring2.aop.impl; public interface Calculator { int add(int i, int j); int sub(int i, int j); int mul(int i, int j); int div(int i, int j); } CalculatorImpl.java
@@ -385,37 +381,37 @@ package com.study.spring2.aop.impl; import org.springframework.stereotype.Compon
     
     <item>
       <title>Python操作目录文件</title>
-      <link>https://1019.fun/posts/python%E6%93%8D%E4%BD%9C%E7%9B%AE%E5%BD%95%E6%96%87%E4%BB%B6/</link>
+      <link>https:///shijianliangs.github.io/posts/python%E6%93%8D%E4%BD%9C%E7%9B%AE%E5%BD%95%E6%96%87%E4%BB%B6/</link>
       <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/python%E6%93%8D%E4%BD%9C%E7%9B%AE%E5%BD%95%E6%96%87%E4%BB%B6/</guid>
+      <guid>https:///shijianliangs.github.io/posts/python%E6%93%8D%E4%BD%9C%E7%9B%AE%E5%BD%95%E6%96%87%E4%BB%B6/</guid>
       <description> 遍历目录下所有以.log结尾的文件，并输出文件的全路径  import glob file_dict = glob.glob(&amp;#39;/Users/shijl/Downloads/*.log&amp;#39;) print(file_dict) &amp;#34;&amp;#34;&amp;#34; 输出结果: [&amp;#39;/Users/shijl/Downloads/2018_access.log&amp;#39;, &amp;#39;/Users/shijl/Downloads/2018_error.log&amp;#39;] &amp;#34;&amp;#34;&amp;#34; for file in file_dict: print(file) &amp;#34;&amp;#34;&amp;#34; 输出结果: /Users/shijl/Downloads/2018_error.log /Users/shijl/Downloads/2018_access.log &amp;#34;&amp;#34;&amp;#34;  获取文件属性  import os # 获取文件创建时间戳 print(os.path.getctime(&amp;#39;/Users/shijl/Downloads/2018_access.log&amp;#39;)) &amp;#34;&amp;#34;&amp;#34; 输出结果: 1576662925.199362 &amp;#34;&amp;#34;&amp;#34; # 获取文件修改时间戳 print(os.path.getmtime(&amp;#39;/Users/shijl/Downloads/2018_access.log&amp;#39;)) &amp;#34;&amp;#34;&amp;#34; 输出结果: 1576662925.199362 &amp;#34;&amp;#34;&amp;#34; </description>
     </item>
     
     <item>
       <title>TCP的3次握手</title>
-      <link>https://1019.fun/posts/tcp%E7%9A%843%E6%AC%A1%E6%8F%A1%E6%89%8B/</link>
+      <link>https:///shijianliangs.github.io/posts/tcp%E7%9A%843%E6%AC%A1%E6%8F%A1%E6%89%8B/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/tcp%E7%9A%843%E6%AC%A1%E6%8F%A1%E6%89%8B/</guid>
+      <guid>https:///shijianliangs.github.io/posts/tcp%E7%9A%843%E6%AC%A1%E6%8F%A1%E6%89%8B/</guid>
       <description>3次握手 第1次代表A向B请求 第2次代表B确认收到A的请求，并向A发送请求 第3次代表A确认收到B的请求 4次挥手 第1次代表A告诉B，要关闭连接 第2次代表B收到A关闭连接的请求，并确认 第3次代表B关闭与A的连接 第4次代表A确认B的关闭连接 6种标志位 SYN：同步标志 ACK：确认标志 RST：复位标志 URG：紧急标志 PSH：推标志 FIN：结束标志 </description>
     </item>
     
     <item>
       <title>JMeter5.2命令行选项</title>
-      <link>https://1019.fun/posts/jmeter5.2%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%80%89%E9%A1%B9/</link>
+      <link>https:///shijianliangs.github.io/posts/jmeter5.2%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%80%89%E9%A1%B9/</link>
       <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/jmeter5.2%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%80%89%E9%A1%B9/</guid>
+      <guid>https:///shijianliangs.github.io/posts/jmeter5.2%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%80%89%E9%A1%B9/</guid>
       <description>~/apache-jmeter-5.2/bin/jmeter -? _ ____ _ ____ _ _ _____ _ __ __ _____ _____ _____ ____ / \  | _ \ / \  / ___| | | | ____| | | \/ | ____|_ _| ____| _ \  / _ \ | |_) / _ \| | | |_| | _| _ | | |\/| | _| | | | _| | |_) | / ___ \| __/ ___ \ |___| _ | |___ | |_| | | | | |___ | | | |___| _ &amp;lt; /_/ \_\_| /_/ \_\____|_| |_|_____| \___/|_| |_|_____| |_| |_____|_| \_\ 5.</description>
     </item>
     
     <item>
       <title>ubuntu新增swap分区</title>
-      <link>https://1019.fun/posts/ubuntu%E6%96%B0%E5%A2%9Eswap%E5%88%86%E5%8C%BA/</link>
+      <link>https:///shijianliangs.github.io/posts/ubuntu%E6%96%B0%E5%A2%9Eswap%E5%88%86%E5%8C%BA/</link>
       <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/ubuntu%E6%96%B0%E5%A2%9Eswap%E5%88%86%E5%8C%BA/</guid>
+      <guid>https:///shijianliangs.github.io/posts/ubuntu%E6%96%B0%E5%A2%9Eswap%E5%88%86%E5%8C%BA/</guid>
       <description>系统版本信息
 root@vultr:~# cat /etc/lsb-release DISTRIB_ID=Ubuntu DISTRIB_RELEASE=18.04 DISTRIB_CODENAME=bionic DISTRIB_DESCRIPTION=&amp;#34;Ubuntu 18.04.1 LTS&amp;#34; 在执行apt命令的时候，报错了
 root@vultr:~# sudo apt-get upgrade E: Dynamic MMap ran out of room. Please increase the size of APT::Cache-Start. Current value: 42991616. (man 5 apt.conf) Reading package lists... Error! E: Dynamic MMap ran out of room. Please increase the size of APT::Cache-Start. Current value: 42991616. (man 5 apt.conf) E: Error occurred while processing r-cran-futile.logger (NewFileVer1) E: Problem with MergeList /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_universe_binary-i386_Packages E: The package lists or status file could not be parsed or opened.</description>
@@ -423,29 +419,29 @@ root@vultr:~# sudo apt-get upgrade E: Dynamic MMap ran out of room. Please incre
     
     <item>
       <title>JMeter中BeanShell实现请求加解密</title>
-      <link>https://1019.fun/posts/jmeter%E4%B8%ADbeanshell%E5%AE%9E%E7%8E%B0%E8%AF%B7%E6%B1%82%E5%8A%A0%E8%A7%A3%E5%AF%86/</link>
+      <link>https:///shijianliangs.github.io/posts/jmeter%E4%B8%ADbeanshell%E5%AE%9E%E7%8E%B0%E8%AF%B7%E6%B1%82%E5%8A%A0%E8%A7%A3%E5%AF%86/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/jmeter%E4%B8%ADbeanshell%E5%AE%9E%E7%8E%B0%E8%AF%B7%E6%B1%82%E5%8A%A0%E8%A7%A3%E5%AF%86/</guid>
+      <guid>https:///shijianliangs.github.io/posts/jmeter%E4%B8%ADbeanshell%E5%AE%9E%E7%8E%B0%E8%AF%B7%E6%B1%82%E5%8A%A0%E8%A7%A3%E5%AF%86/</guid>
       <description>1. 获取请求数据进行加密 import org.apache.jmeter.config.*; import org.apache.jmeter.protocol.http.sampler.*; import java.util.*; //获取加密前的数据 Arguments arguments = sampler.getArguments(); Argument argument = arguments.getArgument(0); String decrypt_data = argument.getValue(); //加密 String encrypt_data = encrypt(decrypt_data); //将加密好的数据重新设置到参数 argument.setValue(encrypt_data); 2. 获取响应数据进行解密 import com.alibaba.fastjson.*; import java.util.*; //获取响应的值 String response=new String(prev.getResponseData(),&amp;#34;UTF-8&amp;#34;); //解密 String decrypt_response = decrypt(response); //将解密好的数据重新设置到响应 prev.setResponseData(decrypt_response); </description>
     </item>
     
     <item>
       <title>Mybatis动态SQL</title>
-      <link>https://1019.fun/posts/mybatis%E5%8A%A8%E6%80%81sql/</link>
+      <link>https:///shijianliangs.github.io/posts/mybatis%E5%8A%A8%E6%80%81sql/</link>
       <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mybatis%E5%8A%A8%E6%80%81sql/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mybatis%E5%8A%A8%E6%80%81sql/</guid>
       <description>EmployeeMapper.xml
 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34; ?&amp;gt; &amp;lt;!DOCTYPE mapper PUBLIC &amp;#34;-//mybatis.org//DTD Mapper 3.0//EN&amp;#34; &amp;#34;http://mybatis.org/dtd/mybatis-3-mapper.dtd&amp;#34; &amp;gt; &amp;lt;mapper namespace=&amp;#34;com.study.mybatis.dynamic.dao.EmployeeMapper&amp;#34;&amp;gt; &amp;lt;!-- if --&amp;gt; &amp;lt;select id=&amp;#34;getEmpsByConditionIf&amp;#34; resultType=&amp;#34;com.study.mybatis.dynamic.pojo.Employee&amp;#34;&amp;gt; select * from tbl_employee &amp;lt;where&amp;gt; &amp;lt;if test=&amp;#34;id!=null&amp;#34;&amp;gt; id = #{id} &amp;lt;/if&amp;gt; &amp;lt;if test=&amp;#34;lastName != null and lastName != &amp;#39;&amp;#39;&amp;#34;&amp;gt; and last_name = #{lastName} &amp;lt;/if&amp;gt; &amp;lt;if test=&amp;#34;email != null and email.trim() != &amp;#39;&amp;#39;&amp;#34;&amp;gt; and last_name = #{lastName} &amp;lt;/if&amp;gt; &amp;lt;if test=&amp;#34;gender == 0 or gender == 1&amp;#34;&amp;gt; and gender = #{gender} &amp;lt;/if&amp;gt; &amp;lt;/where&amp;gt; &amp;lt;/select&amp;gt; &amp;lt;!</description>
     </item>
     
     <item>
       <title>spring的xml配置</title>
-      <link>https://1019.fun/posts/spring%E7%9A%84xml%E9%85%8D%E7%BD%AE/</link>
+      <link>https:///shijianliangs.github.io/posts/spring%E7%9A%84xml%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/spring%E7%9A%84xml%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https:///shijianliangs.github.io/posts/spring%E7%9A%84xml%E9%85%8D%E7%BD%AE/</guid>
       <description>创建一个Bean applictionContext.xml
 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;beans xmlns=&amp;#34;http://www.springframework.org/schema/beans&amp;#34; xmlns:xsi=&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34; xsi:schemaLocation=&amp;#34;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&amp;#34;&amp;gt; &amp;lt;bean id=&amp;#34;helloWorld&amp;#34; class=&amp;#34;com.study.spring.pojo.HelloWorld&amp;#34;&amp;gt; &amp;lt;property name=&amp;#34;name&amp;#34; value=&amp;#34;china-spring&amp;#34;/&amp;gt; &amp;lt;/bean&amp;gt; &amp;lt;/beans&amp;gt; Bean熟悉值包含特殊字符的处理方式 applictionContext.xml
 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;beans xmlns=&amp;#34;http://www.springframework.org/schema/beans&amp;#34; xmlns:xsi=&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34; xsi:schemaLocation=&amp;#34;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&amp;#34;&amp;gt; &amp;lt;bean id=&amp;#34;car1&amp;#34; class=&amp;#34;com.study.spring.pojo.Car&amp;#34;&amp;gt; &amp;lt;constructor-arg name=&amp;#34;brand&amp;#34; value=&amp;#34;BMW&amp;#34;/&amp;gt; &amp;lt;!-- 如果字面包含特殊字符可以使用 &amp;lt;![CDATA[]]&amp;gt; 包裹--&amp;gt; &amp;lt;!-- 属性值也可以通过 value 子节点进行配置--&amp;gt; &amp;lt;constructor-arg name=&amp;#34;city&amp;#34;&amp;gt;&amp;lt;value&amp;gt;&amp;lt;![CDATA[&amp;lt;Beijing&amp;#39;&amp;gt;]]&amp;gt;&amp;lt;/value&amp;gt;&amp;lt;/constructor-arg&amp;gt; &amp;lt;constructor-arg name=&amp;#34;price&amp;#34; value=&amp;#34;1000000&amp;#34;/&amp;gt; &amp;lt;constructor-arg name=&amp;#34;maxSpeed&amp;#34; value=&amp;#34;300&amp;#34;/&amp;gt; &amp;lt;/bean&amp;gt; &amp;lt;/beans&amp;gt; Bean引用 applictionContext.xml
@@ -454,10 +450,10 @@ root@vultr:~# sudo apt-get upgrade E: Dynamic MMap ran out of room. Please incre
     
     <item>
       <title>ssh免密登录</title>
-      <link>https://1019.fun/posts/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</link>
+      <link>https:///shijianliangs.github.io/posts/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</guid>
+      <guid>https:///shijianliangs.github.io/posts/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</guid>
       <description>  生成公钥
 ssh-keygen   仅需将机器A的ssh公钥文件安装到机器B上，在机器A的终端执行
 ssh-copy-id user@xxx.xxx.xxx.xxx   之后从机器A登录机器B，就无需再输入密码了
@@ -466,10 +462,10 @@ ssh user@xxx.xxx.xxx.xxx   </description>
     
     <item>
       <title>vuepress配置Valine评论插件</title>
-      <link>https://1019.fun/posts/vuepress%E9%85%8D%E7%BD%AEvaline%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/</link>
+      <link>https:///shijianliangs.github.io/posts/vuepress%E9%85%8D%E7%BD%AEvaline%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/</link>
       <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/vuepress%E9%85%8D%E7%BD%AEvaline%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/</guid>
+      <guid>https:///shijianliangs.github.io/posts/vuepress%E9%85%8D%E7%BD%AEvaline%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/</guid>
       <description>1. 注册账号 前往https://leancloud.cn/注册账号
 2. 获取appId和appKey 路径 应用&amp;gt;设置&amp;gt;应用Keys
 3.配置config.js 在themeConfig节点下配置自己Valine信息
@@ -478,68 +474,68 @@ module.exports = { ...... &amp;#34;themeConfig&amp;#34;: { ...... valineConfig: 
     
     <item>
       <title>ubuntu&#43;apache&#43;php&#43;mysql环境搭建</title>
-      <link>https://1019.fun/posts/ubuntu&#43;apache&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <link>https:///shijianliangs.github.io/posts/ubuntu&#43;apache&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/ubuntu&#43;apache&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https:///shijianliangs.github.io/posts/ubuntu&#43;apache&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>1. 安装apache2 apt-get install apache2 检查是否安装成功，浏览器输入服务器ip，出现下图即代表安装启动成功 2. 安装php7.0 apt-get install php7.0 3. 安装apache的php7.0支持模块 apt-get install libapache2-mod-php7.0 4. 安装mysql-server apt-get install mysql-server #过程会提示设置密码，正常设置即可 5. 校验mysql是否安装成功 mysql -u root -p #成功登录即可 6. 修改apache的php主目录 vim /etc/apache2/sites-available/000-default.conf 修改成/var/www 7. 重启apache服务 service apache2 restart 8. 在/var/www写一个测试的脚本 index.php
-&amp;lt;?php echo &amp;#34;Hello World&amp;#34;; ?&amp;gt; 9. Finish </description>
+&amp;lt;?php echo &amp;#34;Hello World&amp;#34;; ?&amp;gt;9. Finish </description>
     </item>
     
     <item>
       <title>Django常见报错</title>
-      <link>https://1019.fun/posts/django%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99/</link>
+      <link>https:///shijianliangs.github.io/posts/django%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99/</link>
       <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/django%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99/</guid>
+      <guid>https:///shijianliangs.github.io/posts/django%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99/</guid>
       <description> In order to allow non-dict objects to be serialized  return JsonResponse(&amp;#39;aaa&amp;#39;) 修改为
 return JsonResponse(&amp;#39;aaa&amp;#39;, safe = False)  You called this URL via POST, but the URL doesn&amp;rsquo;t end in a slash and you have APPEND_SLASH set 请求的url最后带上/  </description>
     </item>
     
     <item>
       <title>caddy权限控制</title>
-      <link>https://1019.fun/posts/caddy%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/</link>
+      <link>https:///shijianliangs.github.io/posts/caddy%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/</link>
       <pubDate>Tue, 08 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/caddy%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/</guid>
+      <guid>https:///shijianliangs.github.io/posts/caddy%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/</guid>
       <description>编辑Caddyfile
 :9001 { root	/Users/shijl/book/public/ log	/Users/shijl/Downloads/9001_access.log errors /Users/shijl/Downloads/9001_errors.log basicauth test test { realm name / } } 效果 </description>
     </item>
     
     <item>
       <title>scp</title>
-      <link>https://1019.fun/posts/scp/</link>
+      <link>https:///shijianliangs.github.io/posts/scp/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/scp/</guid>
+      <guid>https:///shijianliangs.github.io/posts/scp/</guid>
       <description>用于Linux之间复制文件和目录。（需要有对应的读写权限）
 复制本地文件到远程服务器 scp /local_path/local_file.txt remote_user@remote_ip:/remote_path/ 复制本地文件夹到远程服务器 scp -r /local_path/local_dir/ remote_user@remote_ip:/remote_path/ 复制远程文件到本地 scp remote_user@remote_ip:/remote_path/remote_file.txt /local_path/ 复制远程文件夹到本地 scp -r remote_user@remote_ip:/remote_path/remote_dir/ /local_path/ </description>
     </item>
     
     <item>
       <title>ubuntu&#43;nginx&#43;php&#43;mysql环境搭建</title>
-      <link>https://1019.fun/posts/ubuntu&#43;nginx&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <link>https:///shijianliangs.github.io/posts/ubuntu&#43;nginx&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/ubuntu&#43;nginx&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https:///shijianliangs.github.io/posts/ubuntu&#43;nginx&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>1. 安装nginx apt-get install nginx 检查是否安装成功，浏览器输入服务器ip，出现下图即代表安装启动成功 2. 安装php7.0-fpm apt-get install php7.0-fpm 3. 启动php7.0-fpm service php7.0-fpm restart 4. 安装mysql-server apt-get install mysql-server #过程会提示设置密码，正常设置即可 5. 校验mysql是否安装成功 mysql -u root -p #成功登录即可 6. 修改nginx配置 vim /etc/nginx/sites-enabled/default server { listen 80; listen [::]:80; # listen [::]:443 ssl http2; # listen 443 ssl http2; # include ssl.conf; # ssl_certificate /path/to/crt; # ssl_certificate_key /path/to/key; root /var/www; index index.html index.htm index.php; server_name server_domain_or_IP; location / { try_files $uri $uri/ =404; } location /phpmyadmin { index index.</description>
     </item>
     
     <item>
       <title>shell脚本实现查询进程状态</title>
-      <link>https://1019.fun/posts/shell%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81/</link>
+      <link>https:///shijianliangs.github.io/posts/shell%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81/</link>
       <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/shell%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81/</guid>
+      <guid>https:///shijianliangs.github.io/posts/shell%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81/</guid>
       <description>#!/bin/bash  # 设置需要监控的进程名称 my_array=(&amp;#34;Navicat&amp;#34; &amp;#34;QQ&amp;#34; &amp;#34;MWeb&amp;#34; &amp;#34;aaaaa&amp;#34; ); # 遍历监控的进程 for ((i=0; i &amp;lt; ${#my_array[*]}; i++)) do # 统计进程个数（需排除grep自身的查询进程） count=`ps -ef | grep &amp;#34;${my_array[i]}&amp;#34; | grep -v &amp;#34;grep&amp;#34; | wc -l`; if [ $count != 0 ];then # 绿色字体输出存活进程 echo -e &amp;#34;\033[32m [Alive] ${my_array[i]}\033[0m&amp;#34;; else # 红色字体输出死亡进程 echo -e &amp;#34;\033[31m [Dead] ${my_array[i]}\033[0m&amp;#34;; fi done </description>
     </item>
     
     <item>
       <title>phpMyAdmin安装</title>
-      <link>https://1019.fun/posts/phpmyadmin%E5%AE%89%E8%A3%85/</link>
+      <link>https:///shijianliangs.github.io/posts/phpmyadmin%E5%AE%89%E8%A3%85/</link>
       <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/phpmyadmin%E5%AE%89%E8%A3%85/</guid>
+      <guid>https:///shijianliangs.github.io/posts/phpmyadmin%E5%AE%89%E8%A3%85/</guid>
       <description>1. phpMyAdmin官网下载 https://www.phpmyadmin.net/downloads
 或者直接下载到/var/www
 wget https://files.phpmyadmin.net/phpMyAdmin/4.8.5/phpMyAdmin-4.8.5-all-languages.tar.gz 2. 解压 tar -zxvf phpMyAdmin-4.8.5-all-languages.tar.gz 3. 删除压缩包 rm phpMyAdmin-4.8.5-all-languages.tar.gz 4. 改名 mv phpMyAdmin-4.8.5-all-languages phpmyadmin 5. 配置 cd phpmyadmin;mkdir tmp;chmod 777 tmp 6. 服务器访问 http://xxx.xxx.xxx.xxx/phpmyadmin </description>
@@ -547,19 +543,19 @@ wget https://files.phpmyadmin.net/phpMyAdmin/4.8.5/phpMyAdmin-4.8.5-all-language
     
     <item>
       <title>vuepress配置百度统计</title>
-      <link>https://1019.fun/posts/vuepress%E9%85%8D%E7%BD%AE%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/</link>
+      <link>https:///shijianliangs.github.io/posts/vuepress%E9%85%8D%E7%BD%AE%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/</link>
       <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/vuepress%E9%85%8D%E7%BD%AE%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/</guid>
+      <guid>https:///shijianliangs.github.io/posts/vuepress%E9%85%8D%E7%BD%AE%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/</guid>
       <description>config.js module.exports = { ...... head: [ [&amp;#39;script&amp;#39;, {}, ` var _hmt = _hmt || []; (function() { var hm = document.createElement(&amp;#34;script&amp;#34;); hm.src = &amp;#34;https://hm.baidu.com/hm.js?xxxxxxxxxx&amp;#34;; var s = document.getElementsByTagName(&amp;#34;script&amp;#34;)[0]; s.parentNode.insertBefore(hm, s); })(); `] ] } 参考 https://www.codeleading.com/article/94892317519/</description>
     </item>
     
     <item>
       <title>http_vs_https</title>
-      <link>https://1019.fun/posts/http_vs_https/</link>
+      <link>https:///shijianliangs.github.io/posts/http_vs_https/</link>
       <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/http_vs_https/</guid>
+      <guid>https:///shijianliangs.github.io/posts/http_vs_https/</guid>
       <description>定义     全称 中文释义     HTTP HyperText Transfer Protocol 超文本传输协议   HTTPS HyperText Transfer Protocol Secure/HyperText Transfer Protocol over Secure Socket Layer 安全地超文本传输协议    HTTP+SSL=HTTPS。通俗的讲，就是比http更加的安全。
 端口 HTTP使用80端口，HTTPS使用443端口。
 内容安全性 HTTP方式传输，明文传输，不安全。HTTPS方式传输，数据是加密，安全性高。
@@ -568,38 +564,38 @@ wget https://files.phpmyadmin.net/phpMyAdmin/4.8.5/phpMyAdmin-4.8.5-all-language
     
     <item>
       <title>ubuntu安装v2ray服务端</title>
-      <link>https://1019.fun/posts/ubuntu%E5%AE%89%E8%A3%85v2ray%E6%9C%8D%E5%8A%A1%E7%AB%AF/</link>
+      <link>https:///shijianliangs.github.io/posts/ubuntu%E5%AE%89%E8%A3%85v2ray%E6%9C%8D%E5%8A%A1%E7%AB%AF/</link>
       <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/ubuntu%E5%AE%89%E8%A3%85v2ray%E6%9C%8D%E5%8A%A1%E7%AB%AF/</guid>
+      <guid>https:///shijianliangs.github.io/posts/ubuntu%E5%AE%89%E8%A3%85v2ray%E6%9C%8D%E5%8A%A1%E7%AB%AF/</guid>
       <description>bash &amp;lt;(curl -s -L https://git.io/v2ray.sh) </description>
     </item>
     
     <item>
       <title>ubuntu安装haproxy加速</title>
-      <link>https://1019.fun/posts/ubuntu%E5%AE%89%E8%A3%85haproxy%E5%8A%A0%E9%80%9F/</link>
+      <link>https:///shijianliangs.github.io/posts/ubuntu%E5%AE%89%E8%A3%85haproxy%E5%8A%A0%E9%80%9F/</link>
       <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/ubuntu%E5%AE%89%E8%A3%85haproxy%E5%8A%A0%E9%80%9F/</guid>
+      <guid>https:///shijianliangs.github.io/posts/ubuntu%E5%AE%89%E8%A3%85haproxy%E5%8A%A0%E9%80%9F/</guid>
       <description>1. 下载 haproxy sudo apt-get install haproxy 2. 配置 haproxy 打开/etc/haproxy/haproxy.cfg文件，删除原有内容。新增以下配置：
 global ulimit-n 51200 defaults log global mode tcp option dontlognull contimeout 1000 clitimeout 150000 srvtimeout 150000 frontend ss-in bind *:8388 #加速服务器端口 default_backend ss-out backend ss-out server server1 111.112.113.114:2222 maxconn 20480 #ss服务器ip、端口 3. 启动 haproxy sudo service haproxy restart SS客户端连接加速服务器的ip，其他与直接连SS服务器配置一致</description>
     </item>
     
     <item>
       <title>vue插件之vue-json-viewer</title>
-      <link>https://1019.fun/posts/vue%E6%8F%92%E4%BB%B6%E4%B9%8Bvue-json-viewer/</link>
+      <link>https:///shijianliangs.github.io/posts/vue%E6%8F%92%E4%BB%B6%E4%B9%8Bvue-json-viewer/</link>
       <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/vue%E6%8F%92%E4%BB%B6%E4%B9%8Bvue-json-viewer/</guid>
+      <guid>https:///shijianliangs.github.io/posts/vue%E6%8F%92%E4%BB%B6%E4%B9%8Bvue-json-viewer/</guid>
       <description>安装 npm install vue-json-viewer --save 使用 &amp;lt;!-- 默认不展开 --&amp;gt; &amp;lt;json-viewer :value=&amp;#34;jsonData&amp;#34;&amp;gt;&amp;lt;/json-viewer&amp;gt; &amp;lt;!-- 默认展开 --&amp;gt; &amp;lt;json-viewer :value=&amp;#34;jsonData&amp;#34; :expand-depth=5 copyable boxed sort&amp;gt;&amp;lt;/json-viewer&amp;gt; import Vue from &amp;#39;vue&amp;#39; import JsonViewer from &amp;#39;../../node_modules/vue-json-viewer&amp;#39; Vue.use(JsonViewer) data() { return { jsonData: {&amp;#34;a&amp;#34;:[{&amp;#34;b&amp;#34;:&amp;#34;v&amp;#34;},{&amp;#34;c&amp;#34;:5}],&amp;#34;M&amp;#34;:&amp;#34;n&amp;#34;} } } 效果 参考 https://blog.csdn.net/sanlingwu/article/details/84141673</description>
     </item>
     
     <item>
       <title>TestNG@Test注解配置</title>
-      <link>https://1019.fun/posts/testngtest%E6%B3%A8%E8%A7%A3%E9%85%8D%E7%BD%AE/</link>
+      <link>https:///shijianliangs.github.io/posts/testngtest%E6%B3%A8%E8%A7%A3%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/testngtest%E6%B3%A8%E8%A7%A3%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https:///shijianliangs.github.io/posts/testngtest%E6%B3%A8%E8%A7%A3%E9%85%8D%E7%BD%AE/</guid>
       <description>alwaysRun If set to true, this test method will always be run even if it depends on a method that failed.
 /** * 默认: false * 设置为 true ，则次方法依赖的方法失败，该方法也会运行。 */ @Test(alwaysRun = true) dataProvider The name of the data provider for this test method.
 /** * 设置该方法的执行参数 */ @DataProvider(name = &amp;#34;xxx&amp;#34;) public static Object[][] xxx() { return new Object[][]{ {&amp;#34;aaa&amp;#34;, &amp;#34;bbb&amp;#34;}, }; } @Test(dataProvider = &amp;#34;xxx&amp;#34;) dataProviderClass The class where to look for the data provider.</description>
@@ -607,19 +603,19 @@ global ulimit-n 51200 defaults log global mode tcp option dontlognull contimeout
     
     <item>
       <title>centos开放端口</title>
-      <link>https://1019.fun/posts/centos%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3/</link>
+      <link>https:///shijianliangs.github.io/posts/centos%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3/</link>
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/centos%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3/</guid>
+      <guid>https:///shijianliangs.github.io/posts/centos%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3/</guid>
       <description>firewall-cmd --zone=public --add-port=2018/tcp --permanent firewall-cmd --reload </description>
     </item>
     
     <item>
       <title>Mybatis的缓存机制</title>
-      <link>https://1019.fun/posts/mybatis%E7%9A%84%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</link>
+      <link>https:///shijianliangs.github.io/posts/mybatis%E7%9A%84%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</link>
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mybatis%E7%9A%84%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mybatis%E7%9A%84%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</guid>
       <description>一级缓存（本地缓存） 工作机制  sqlSession级别的缓存，一直开启，无法配置关闭。 与数据库同一次会话期间查询到的数据会放在本地缓存中，以后如果需要获取相同的数据，直接从缓存中读取。  一级缓存失效的几种情况  不同的sqlSession sqlSession相同，查询条件不同 sqlSession相同，查询条件相同，两次之间执行了增删改操作 sqlSession相同，查询条件相同，两次之间手动清除缓存  openSession.clearCache();  二级缓存（全局缓存） 工作机制  namespace级别的缓存 sqlSession被关闭时，一级缓存保存到二级缓存中 不同的namespace查出的缓存数据会放在自己对于的二级缓存中 注意： 默认查询出的结果先放到一级缓存中。只有当sqlSession被关闭的时候，一级缓存才会转移到二级缓存中。  二级缓存的使用  开启全局二级缓存配置(默认开启)  &amp;lt;setting name=&amp;#34;cacheEnabled&amp;#34; value=&amp;#34;true&amp;#34;/&amp;gt;  在每个mapper.xml中配置使用二级缓存  &amp;lt;cache&amp;gt;&amp;lt;/cache&amp;gt;  POJO需要实现序列化接口  public class Department implements Serializable { private static final long serialversionUID = 1L; //TODO } mapper.xml中的cache属性 (1)eviction 这个更高级的配置创建了一个 FIFO 缓存，每隔 60 秒刷新，最多可以存储结果对象或列表的 512 个引用，而且返回的对象被认为是只读的，因此对它们进行修改可能会在不同线程中的调用者产生冲突。 可用的清除策略有：
  LRU（默认值） – 最近最少使用：移除最长时间不被使用的对象。 FIFO – 先进先出：按对象进入缓存的顺序来移除它们。 SOFT – 软引用：基于垃圾回收器状态和软引用规则移除对象。 WEAK – 弱引用：更积极地基于垃圾收集器状态和弱引用规则移除对象。  (2)flushInterval （刷新间隔）属性可以被设置为任意的正整数，设置的值应该是一个以毫秒为单位的合理时间量。 默认情况是不设置，也就是没有刷新间隔，缓存仅仅会在调用语句时刷新。</description>
     </item>

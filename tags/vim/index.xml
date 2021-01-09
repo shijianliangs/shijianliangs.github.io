@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vim on 壹零壹玖</title>
-    <link>https://1019.fun/tags/vim/</link>
+    <link>https:///shijianliangs.github.io/tags/vim/</link>
     <description>Recent content in vim on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Jun 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/vim/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 07 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vim快捷键</title>
-      <link>https://1019.fun/posts/vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <link>https:///shijianliangs.github.io/posts/vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <guid>https:///shijianliangs.github.io/posts/vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description> 移动到当前行首: ^/0 移到到当前行尾: $ 移动到下一行行尾:1$ 移动到下n行行尾:n$ 移动到文件第一行:gg 移动到文件最后一行:GG 显示行号:set nu 跳转指定行:n  </description>
     </item>
     

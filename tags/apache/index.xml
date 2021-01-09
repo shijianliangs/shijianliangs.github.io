@@ -2,23 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>apache on 壹零壹玖</title>
-    <link>https://1019.fun/tags/apache/</link>
+    <link>https:///shijianliangs.github.io/tags/apache/</link>
     <description>Recent content in apache on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Aug 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/apache/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 05 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/apache/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ubuntu&#43;apache&#43;php&#43;mysql环境搭建</title>
-      <link>https://1019.fun/posts/ubuntu&#43;apache&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <link>https:///shijianliangs.github.io/posts/ubuntu&#43;apache&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/ubuntu&#43;apache&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https:///shijianliangs.github.io/posts/ubuntu&#43;apache&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>1. 安装apache2 apt-get install apache2 检查是否安装成功，浏览器输入服务器ip，出现下图即代表安装启动成功 2. 安装php7.0 apt-get install php7.0 3. 安装apache的php7.0支持模块 apt-get install libapache2-mod-php7.0 4. 安装mysql-server apt-get install mysql-server #过程会提示设置密码，正常设置即可 5. 校验mysql是否安装成功 mysql -u root -p #成功登录即可 6. 修改apache的php主目录 vim /etc/apache2/sites-available/000-default.conf 修改成/var/www 7. 重启apache服务 service apache2 restart 8. 在/var/www写一个测试的脚本 index.php
-&amp;lt;?php echo &amp;#34;Hello World&amp;#34;; ?&amp;gt; 9. Finish </description>
+&amp;lt;?php echo &amp;#34;Hello World&amp;#34;; ?&amp;gt;9. Finish </description>
     </item>
     
   </channel>

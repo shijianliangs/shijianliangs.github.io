@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>valine on 壹零壹玖</title>
-    <link>https://1019.fun/tags/valine/</link>
+    <link>https:///shijianliangs.github.io/tags/valine/</link>
     <description>Recent content in valine on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Aug 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/valine/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 19 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/valine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vuepress配置Valine评论插件</title>
-      <link>https://1019.fun/posts/vuepress%E9%85%8D%E7%BD%AEvaline%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/</link>
+      <link>https:///shijianliangs.github.io/posts/vuepress%E9%85%8D%E7%BD%AEvaline%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/</link>
       <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/vuepress%E9%85%8D%E7%BD%AEvaline%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/</guid>
+      <guid>https:///shijianliangs.github.io/posts/vuepress%E9%85%8D%E7%BD%AEvaline%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/</guid>
       <description>1. 注册账号 前往https://leancloud.cn/注册账号
 2. 获取appId和appKey 路径 应用&amp;gt;设置&amp;gt;应用Keys
 3.配置config.js 在themeConfig节点下配置自己Valine信息

@@ -2,30 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mysql on 壹零壹玖</title>
-    <link>https://1019.fun/tags/mysql/</link>
+    <link>https:///shijianliangs.github.io/tags/mysql/</link>
     <description>Recent content in mysql on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django模型进行Mysql操作</title>
-      <link>https://1019.fun/posts/django%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8Cmysql%E6%93%8D%E4%BD%9C/</link>
+      <link>https:///shijianliangs.github.io/posts/django%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8Cmysql%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/django%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8Cmysql%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https:///shijianliangs.github.io/posts/django%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8Cmysql%E6%93%8D%E4%BD%9C/</guid>
       <description># 模型类 class Student(models.Model): id = models.AutoField(primary_key = True) name = models.CharField(max_length = 32) age = models.IntegerField(blank = True) # 增 stu = Student(name = &amp;#39;Bob&amp;#39;, age = 10) stu.save() # 删 Student.objects.filter(name = &amp;#39;Bob&amp;#39;).delete() # 改 Student.objects.filter(name = &amp;#39;Bob&amp;#39;).update(&amp;#39;age&amp;#39; = 12) # 查 Student.objects.filter(name = &amp;#39;Bob&amp;#39;) </description>
     </item>
     
     <item>
       <title>pymysql常用操作</title>
-      <link>https://1019.fun/posts/pymysql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+      <link>https:///shijianliangs.github.io/posts/pymysql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/pymysql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https:///shijianliangs.github.io/posts/pymysql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
       <description>安装 pip install pymysql Demo import pymysql def test(): # 新建连接 connection = pymysql.connect(host = &amp;#39;localhost&amp;#39;, port = 3306, user = &amp;#39;root&amp;#39;, password = &amp;#39;root&amp;#39;, database = &amp;#39;django_demo&amp;#39;, charset = &amp;#39;utf8&amp;#39;) connection.autocommit() # 开启自动commit cursor = connection.cursor(cursor = pymysql.cursors.DictCursor) # cursor = pymysql.cursors.DictCursor用来指定按键值对返回查询结果 # 查询 cursor.execute(&amp;#39;SELECT * FROM django_content_type LIMIT 1000&amp;#39;) ones = cursor.fetchall() print(ones) # 插入 cursor.execute(&amp;#39;insert xxx (...) values (...)&amp;#39;) # 若不开启自动commit，则每个除查询的之外的操作都需要单独commit connection.commit() # 关闭连接 connection.close() </description>
     </item>
     

@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>demo on 壹零壹玖</title>
-    <link>https://1019.fun/tags/demo/</link>
+    <link>https:///shijianliangs.github.io/tags/demo/</link>
     <description>Recent content in demo on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Nov 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/demo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 25 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/demo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django实现服务端接口</title>
-      <link>https://1019.fun/posts/django%E5%AE%9E%E7%8E%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8E%A5%E5%8F%A3/</link>
+      <link>https:///shijianliangs.github.io/posts/django%E5%AE%9E%E7%8E%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8E%A5%E5%8F%A3/</link>
       <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/django%E5%AE%9E%E7%8E%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8E%A5%E5%8F%A3/</guid>
+      <guid>https:///shijianliangs.github.io/posts/django%E5%AE%9E%E7%8E%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8E%A5%E5%8F%A3/</guid>
       <description>为什么要学习Django？  软件测试人员该学习 Python 的七个理由 Django是当前Python世界里最负盛名且最成熟的Web框架  基于以上两点，决定学习下这个比较火的Python框架
 安装配置 1. 安装Django pip install Django 2. 新建Django项目 django-admin startproject demo 3. 创建应用和接口 新建 hello 应用
 python manage.py startapp hello 应用创建成功后，在 demo 项目生成 hello 目录

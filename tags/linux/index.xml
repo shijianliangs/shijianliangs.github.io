@@ -2,39 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on 壹零壹玖</title>
-    <link>https://1019.fun/tags/linux/</link>
+    <link>https:///shijianliangs.github.io/tags/linux/</link>
     <description>Recent content in linux on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 05 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>shell多进程</title>
-      <link>https://1019.fun/posts/shell%E5%A4%9A%E8%BF%9B%E7%A8%8B/</link>
+      <link>https:///shijianliangs.github.io/posts/shell%E5%A4%9A%E8%BF%9B%E7%A8%8B/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/shell%E5%A4%9A%E8%BF%9B%E7%A8%8B/</guid>
+      <guid>https:///shijianliangs.github.io/posts/shell%E5%A4%9A%E8%BF%9B%E7%A8%8B/</guid>
       <description>echo.sh #!/bin/bash for (( i = 0; i &amp;lt; 10000; i++ )); do echo &amp;#34;process&amp;#34;${1}&amp;#34;的输出&amp;#34;${i}; done start.sh #!/bin/bash for (( i = 0; i &amp;lt; 5; i++ )); do ./echo.sh ${i} &amp;amp; done 执行结果(摘取部分) 几个进程是并发执行的 ... process3的输出9896 process0的输出9641 process0的输出9642 process3的输出9897 process4的输出9876 process0的输出9643 process4的输出9877 process0的输出9644 process4的输出9878 process0的输出9645 process4的输出9879 process0的输出9646 process4的输出9880 process4的输出9881 process4的输出9882 process4的输出9883 process4的输出9884 ... </description>
     </item>
     
     <item>
       <title>vim快捷键</title>
-      <link>https://1019.fun/posts/vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <link>https:///shijianliangs.github.io/posts/vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <guid>https:///shijianliangs.github.io/posts/vim%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description> 移动到当前行首: ^/0 移到到当前行尾: $ 移动到下一行行尾:1$ 移动到下n行行尾:n$ 移动到文件第一行:gg 移动到文件最后一行:GG 显示行号:set nu 跳转指定行:n  </description>
     </item>
     
     <item>
       <title>ubuntu新增swap分区</title>
-      <link>https://1019.fun/posts/ubuntu%E6%96%B0%E5%A2%9Eswap%E5%88%86%E5%8C%BA/</link>
+      <link>https:///shijianliangs.github.io/posts/ubuntu%E6%96%B0%E5%A2%9Eswap%E5%88%86%E5%8C%BA/</link>
       <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/ubuntu%E6%96%B0%E5%A2%9Eswap%E5%88%86%E5%8C%BA/</guid>
+      <guid>https:///shijianliangs.github.io/posts/ubuntu%E6%96%B0%E5%A2%9Eswap%E5%88%86%E5%8C%BA/</guid>
       <description>系统版本信息
 root@vultr:~# cat /etc/lsb-release DISTRIB_ID=Ubuntu DISTRIB_RELEASE=18.04 DISTRIB_CODENAME=bionic DISTRIB_DESCRIPTION=&amp;#34;Ubuntu 18.04.1 LTS&amp;#34; 在执行apt命令的时候，报错了
 root@vultr:~# sudo apt-get upgrade E: Dynamic MMap ran out of room. Please increase the size of APT::Cache-Start. Current value: 42991616. (man 5 apt.conf) Reading package lists... Error! E: Dynamic MMap ran out of room. Please increase the size of APT::Cache-Start. Current value: 42991616. (man 5 apt.conf) E: Error occurred while processing r-cran-futile.logger (NewFileVer1) E: Problem with MergeList /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_universe_binary-i386_Packages E: The package lists or status file could not be parsed or opened.</description>
@@ -42,10 +38,10 @@ root@vultr:~# sudo apt-get upgrade E: Dynamic MMap ran out of room. Please incre
     
     <item>
       <title>ssh免密登录</title>
-      <link>https://1019.fun/posts/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</link>
+      <link>https:///shijianliangs.github.io/posts/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</guid>
+      <guid>https:///shijianliangs.github.io/posts/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</guid>
       <description>  生成公钥
 ssh-keygen   仅需将机器A的ssh公钥文件安装到机器B上，在机器A的终端执行
 ssh-copy-id user@xxx.xxx.xxx.xxx   之后从机器A登录机器B，就无需再输入密码了
@@ -54,29 +50,29 @@ ssh user@xxx.xxx.xxx.xxx   </description>
     
     <item>
       <title>scp</title>
-      <link>https://1019.fun/posts/scp/</link>
+      <link>https:///shijianliangs.github.io/posts/scp/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/scp/</guid>
+      <guid>https:///shijianliangs.github.io/posts/scp/</guid>
       <description>用于Linux之间复制文件和目录。（需要有对应的读写权限）
 复制本地文件到远程服务器 scp /local_path/local_file.txt remote_user@remote_ip:/remote_path/ 复制本地文件夹到远程服务器 scp -r /local_path/local_dir/ remote_user@remote_ip:/remote_path/ 复制远程文件到本地 scp remote_user@remote_ip:/remote_path/remote_file.txt /local_path/ 复制远程文件夹到本地 scp -r remote_user@remote_ip:/remote_path/remote_dir/ /local_path/ </description>
     </item>
     
     <item>
       <title>shell脚本实现查询进程状态</title>
-      <link>https://1019.fun/posts/shell%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81/</link>
+      <link>https:///shijianliangs.github.io/posts/shell%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81/</link>
       <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/shell%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81/</guid>
+      <guid>https:///shijianliangs.github.io/posts/shell%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81/</guid>
       <description>#!/bin/bash  # 设置需要监控的进程名称 my_array=(&amp;#34;Navicat&amp;#34; &amp;#34;QQ&amp;#34; &amp;#34;MWeb&amp;#34; &amp;#34;aaaaa&amp;#34; ); # 遍历监控的进程 for ((i=0; i &amp;lt; ${#my_array[*]}; i++)) do # 统计进程个数（需排除grep自身的查询进程） count=`ps -ef | grep &amp;#34;${my_array[i]}&amp;#34; | grep -v &amp;#34;grep&amp;#34; | wc -l`; if [ $count != 0 ];then # 绿色字体输出存活进程 echo -e &amp;#34;\033[32m [Alive] ${my_array[i]}\033[0m&amp;#34;; else # 红色字体输出死亡进程 echo -e &amp;#34;\033[31m [Dead] ${my_array[i]}\033[0m&amp;#34;; fi done </description>
     </item>
     
     <item>
       <title>centos开放端口</title>
-      <link>https://1019.fun/posts/centos%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3/</link>
+      <link>https:///shijianliangs.github.io/posts/centos%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3/</link>
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/centos%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3/</guid>
+      <guid>https:///shijianliangs.github.io/posts/centos%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3/</guid>
       <description>firewall-cmd --zone=public --add-port=2018/tcp --permanent firewall-cmd --reload </description>
     </item>
     

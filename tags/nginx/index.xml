@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nginx on 壹零壹玖</title>
-    <link>https://1019.fun/tags/nginx/</link>
+    <link>https:///shijianliangs.github.io/tags/nginx/</link>
     <description>Recent content in nginx on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Mar 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 07 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ubuntu&#43;nginx&#43;php&#43;mysql环境搭建</title>
-      <link>https://1019.fun/posts/ubuntu&#43;nginx&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <link>https:///shijianliangs.github.io/posts/ubuntu&#43;nginx&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/ubuntu&#43;nginx&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https:///shijianliangs.github.io/posts/ubuntu&#43;nginx&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>1. 安装nginx apt-get install nginx 检查是否安装成功，浏览器输入服务器ip，出现下图即代表安装启动成功 2. 安装php7.0-fpm apt-get install php7.0-fpm 3. 启动php7.0-fpm service php7.0-fpm restart 4. 安装mysql-server apt-get install mysql-server #过程会提示设置密码，正常设置即可 5. 校验mysql是否安装成功 mysql -u root -p #成功登录即可 6. 修改nginx配置 vim /etc/nginx/sites-enabled/default server { listen 80; listen [::]:80; # listen [::]:443 ssl http2; # listen 443 ssl http2; # include ssl.conf; # ssl_certificate /path/to/crt; # ssl_certificate_key /path/to/key; root /var/www; index index.html index.htm index.php; server_name server_domain_or_IP; location / { try_files $uri $uri/ =404; } location /phpmyadmin { index index.</description>
     </item>
     

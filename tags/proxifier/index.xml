@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>proxifier on 壹零壹玖</title>
-    <link>https://1019.fun/tags/proxifier/</link>
+    <link>https:///shijianliangs.github.io/tags/proxifier/</link>
     <description>Recent content in proxifier on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Aug 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/proxifier/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 19 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/proxifier/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>proxifier排错</title>
-      <link>https://1019.fun/posts/proxifier%E6%8E%92%E9%94%99/</link>
+      <link>https:///shijianliangs.github.io/posts/proxifier%E6%8E%92%E9%94%99/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/proxifier%E6%8E%92%E9%94%99/</guid>
+      <guid>https:///shijianliangs.github.io/posts/proxifier%E6%8E%92%E9%94%99/</guid>
       <description>环境 SSH Tunnel + Proxifier
 报错 ssh root@192.168.1.5 ssh_exchange_identification: read: Connection reset by peer 解决 Proxifier 中配置了所有 Applications 都走代理，未排除 SSH Tunnel，导致ssh连接错误
 新增 rule，让SSH Tunnel直接连接，不走代理</description>

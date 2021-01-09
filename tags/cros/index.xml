@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cros on 壹零壹玖</title>
-    <link>https://1019.fun/tags/cros/</link>
+    <link>https:///shijianliangs.github.io/tags/cros/</link>
     <description>Recent content in cros on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Dec 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/cros/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 16 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/cros/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django设置允许跨域请求</title>
-      <link>https://1019.fun/posts/django%E8%AE%BE%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</link>
+      <link>https:///shijianliangs.github.io/posts/django%E8%AE%BE%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</link>
       <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/django%E8%AE%BE%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</guid>
+      <guid>https:///shijianliangs.github.io/posts/django%E8%AE%BE%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</guid>
       <description>1. 安装django-cors-headers pip install django-cors-headers 2. 修改settings.py文件 # Step 1 INSTALLED_APPS = [ ... &amp;#39;corsheaders&amp;#39; # cors ] # Step 2 MIDDLEWARE = [ ... &amp;#39;corsheaders.middleware.CorsMiddleware&amp;#39;, &amp;#39;django.middleware.common.CommonMiddleware&amp;#39;, ... # &amp;#39;django.middleware.csrf.CsrfViewMiddleware&amp;#39;, ] # Step3 ALLOWED_HOSTS = [ &amp;#39;*&amp;#39;, ] CORS_ALLOW_CREDENTIALS = True CORS_ORIGIN_ALLOW_ALL = True CORS_ALLOW_HEADERS = (&amp;#39;*&amp;#39;) </description>
     </item>
     

@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mac on 壹零壹玖</title>
-    <link>https://1019.fun/tags/mac/</link>
+    <link>https:///shijianliangs.github.io/tags/mac/</link>
     <description>Recent content in mac on 壹零壹玖</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://1019.fun/tags/mac/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https:///shijianliangs.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mac的charles抓包</title>
-      <link>https://1019.fun/posts/mac%E7%9A%84charles%E6%8A%93%E5%8C%85/</link>
+      <link>https:///shijianliangs.github.io/posts/mac%E7%9A%84charles%E6%8A%93%E5%8C%85/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mac%E7%9A%84charles%E6%8A%93%E5%8C%85/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mac%E7%9A%84charles%E6%8A%93%E5%8C%85/</guid>
       <description>1.Mac端查看代理机IP &amp;amp; 端口 查看路径
 Help&amp;gt;SSL Proxying&amp;gt;Install Charles Certificate on a Mobile Device or Remote Browser
 如下图查看到的代理机的ip:端口为172.17.106.135:8888 2. Mac端设置抓取https 查看路径Proxy-&amp;gt;SSL Proxy Settings-&amp;gt;Add
@@ -28,19 +24,19 @@ Port：443
     
     <item>
       <title>mac的launchpad设置</title>
-      <link>https://1019.fun/posts/mac%E7%9A%84launchpad%E8%AE%BE%E7%BD%AE/</link>
+      <link>https:///shijianliangs.github.io/posts/mac%E7%9A%84launchpad%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mac%E7%9A%84launchpad%E8%AE%BE%E7%BD%AE/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mac%E7%9A%84launchpad%E8%AE%BE%E7%BD%AE/</guid>
       <description>设置 Launchpad 列数 defaults write com.apple.dock springboard-columns -int X 设置 Launchpad 行数 defaults write com.apple.dock springboard-rows -int Y 设置之后需要重启 killall Dock </description>
     </item>
     
     <item>
       <title>记录一次mac权限修复</title>
-      <link>https://1019.fun/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1mac%E6%9D%83%E9%99%90%E4%BF%AE%E5%A4%8D/</link>
+      <link>https:///shijianliangs.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1mac%E6%9D%83%E9%99%90%E4%BF%AE%E5%A4%8D/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1mac%E6%9D%83%E9%99%90%E4%BF%AE%E5%A4%8D/</guid>
+      <guid>https:///shijianliangs.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1mac%E6%9D%83%E9%99%90%E4%BF%AE%E5%A4%8D/</guid>
       <description>问题 手欠执行了sudo chmod -R 664 /usr 直接导致shell命令无法执行，重启后无法进入系统
 恢复模式 首先想到的方式是重装系统，reboot，按住command+R进入恢复模式
 竟然看到了“时间机器”&amp;hellip;..
@@ -65,20 +61,20 @@ chmod u+s usr/bin/sudo 之后就变成这个样子了
     
     <item>
       <title>proxychains让你的terminal健步如飞</title>
-      <link>https://1019.fun/posts/proxychains%E8%AE%A9%E4%BD%A0%E7%9A%84terminal%E5%81%A5%E6%AD%A5%E5%A6%82%E9%A3%9E/</link>
+      <link>https:///shijianliangs.github.io/posts/proxychains%E8%AE%A9%E4%BD%A0%E7%9A%84terminal%E5%81%A5%E6%AD%A5%E5%A6%82%E9%A3%9E/</link>
       <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/proxychains%E8%AE%A9%E4%BD%A0%E7%9A%84terminal%E5%81%A5%E6%AD%A5%E5%A6%82%E9%A3%9E/</guid>
+      <guid>https:///shijianliangs.github.io/posts/proxychains%E8%AE%A9%E4%BD%A0%E7%9A%84terminal%E5%81%A5%E6%AD%A5%E5%A6%82%E9%A3%9E/</guid>
       <description>安装前 shijl:~ shijl$ wget www.google.com --2019-06-20 11:29:15-- http://www.google.com/ Resolving www.google.com (www.google.com)... 69.171.248.128 Connecting to www.google.com (www.google.com)|69.171.248.128|:80... failed: Operation timed out. 安装 brew install proxychains-ng 配置 编辑/usr/local/etc/proxychains.conf文件,最后一行添加
 socks5 127.0.0.1 1080 测试 shijl:~ shijl$ proxychains4 wget www.google.com [proxychains] config file found: /usr/local/etc/proxychains.conf [proxychains] preloading /usr/local/Cellar/proxychains-ng/4.14/lib/libproxychains4.dylib [proxychains] DLL init: proxychains-ng 4.14 --2019-06-20 11:37:50-- http://www.google.com/ Resolving www.google.com (www.google.com)... 224.0.0.1 Connecting to www.google.com (www.google.com)|224.0.0.1|:80... [proxychains] Strict chain ... 127.0.0.1:1080 ... www.google.com:80 ... OK connected. HTTP request sent, awaiting response.</description>
     </item>
     
     <item>
       <title>mac安装php的redis插件</title>
-      <link>https://1019.fun/posts/mac%E5%AE%89%E8%A3%85php%E7%9A%84redis%E6%8F%92%E4%BB%B6/</link>
+      <link>https:///shijianliangs.github.io/posts/mac%E5%AE%89%E8%A3%85php%E7%9A%84redis%E6%8F%92%E4%BB%B6/</link>
       <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://1019.fun/posts/mac%E5%AE%89%E8%A3%85php%E7%9A%84redis%E6%8F%92%E4%BB%B6/</guid>
+      <guid>https:///shijianliangs.github.io/posts/mac%E5%AE%89%E8%A3%85php%E7%9A%84redis%E6%8F%92%E4%BB%B6/</guid>
       <description>mac安装php的redis插件 执行连接redis的操作遇到报错:
 Fatal error&amp;lt;/b&amp;gt;: Uncaught Error: Class &amp;#39;RedisCluster&amp;#39; not found in... 安装  下载php-redis curl -O https://nodeload.github.com/nicolasff/phpredis/zip/master  解压 unzip phpredis-master.zip &amp;amp;&amp;amp; cd phpredis-master  动态安装 phpize  编译 ./configure  安装 make &amp;amp;&amp;amp; make install  修改php.ini,插入: extension=redis.so  重启php-fpm 查看是否安装成功 shijl:7.4 shijl$ php -m | grep redis redis   参考： https://panxu.net/article/8400.html</description>
     </item>
