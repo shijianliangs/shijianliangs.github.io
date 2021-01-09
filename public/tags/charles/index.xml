@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>charles on 壹零壹玖</title>
+    <link>https://1019.fun/tags/charles/</link>
+    <description>Recent content in charles on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/charles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mac的charles抓包</title>
+      <link>https://1019.fun/posts/mac%E7%9A%84charles%E6%8A%93%E5%8C%85/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/mac%E7%9A%84charles%E6%8A%93%E5%8C%85/</guid>
+      <description>1.Mac端查看代理机IP &amp;amp; 端口 查看路径
+Help&amp;gt;SSL Proxying&amp;gt;Install Charles Certificate on a Mobile Device or Remote Browser
+如下图查看到的代理机的ip:端口为172.17.106.135:8888 2. Mac端设置抓取https 查看路径Proxy-&amp;gt;SSL Proxy Settings-&amp;gt;Add
+Host：填*表示所有网站都抓
+Port：443
+3. 手机连接代理机同一局域网并设置好代理 4. 手机安装证书 浏览器访问chls.pro/ssl,安装证书
+5.成功 证书安装成功后即可抓取手机的https请求</description>
+    </item>
+    
+  </channel>
+</rss>

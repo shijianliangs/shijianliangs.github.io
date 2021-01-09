@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mongo on 壹零壹玖</title>
+    <link>https://1019.fun/tags/mongo/</link>
+    <description>Recent content in mongo on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/mongo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MongoDB常用命令</title>
+      <link>https://1019.fun/posts/mongodb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/mongodb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>常用命令  显示数据库列表  show dbs  选择数据库  use db_name  显示当前库中所有的collection  show collections 参考 https://www.jianshu.com/p/0a52c672ae78</description>
+    </item>
+    
+  </channel>
+</rss>

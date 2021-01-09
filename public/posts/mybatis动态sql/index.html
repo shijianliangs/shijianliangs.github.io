@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="shijianliangs" />
+	
+	
+	
+	<title>Mybatis动态SQL ｜ 壹零壹玖</title>
+	
+    
+    
+    <meta name="description" content="EmployeeMapper.xml
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34; ?&amp;gt; &amp;lt;!DOCTYPE mapper PUBLIC &amp;#34;-//mybatis.org//DTD Mapper 3.0//EN&amp;#34; &amp;#34;http://mybatis.org/dtd/mybatis-3-mapper.dtd&amp;#34; &amp;gt; &amp;lt;mapper namespace=&amp;#34;com.study.mybatis.dynamic.dao.EmployeeMapper&amp;#34;&amp;gt; &amp;lt;!-- if --&amp;gt; &amp;lt;select id=&amp;#34;getEmpsByConditionIf&amp;#34; resultType=&amp;#34;com.study.mybatis.dynamic.pojo.Employee&amp;#34;&amp;gt; select * from tbl_employee &amp;lt;where&amp;gt; &amp;lt;if test=&amp;#34;id!=null&amp;#34;&amp;gt; id = #{id} &amp;lt;/if&amp;gt; &amp;lt;if test=&amp;#34;lastName != null and lastName != &amp;#39;&amp;#39;&amp;#34;&amp;gt; and last_name = #{lastName} &amp;lt;/if&amp;gt; &amp;lt;if test=&amp;#34;email != null and email.trim() != &amp;#39;&amp;#39;&amp;#34;&amp;gt; and last_name = #{lastName} &amp;lt;/if&amp;gt; &amp;lt;if test=&amp;#34;gender == 0 or gender == 1&amp;#34;&amp;gt; and gender = #{gender} &amp;lt;/if&amp;gt; &amp;lt;/where&amp;gt; &amp;lt;/select&amp;gt; &amp;lt;!" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="https://1019.fun/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://1019.fun/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://1019.fun/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://1019.fun/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">Archive</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">Tags</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="https://1019.fun/">
+                    <span>壹零壹玖</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">Record Everything.</p>
+            <div class="my_socials">
+                
+                <a href="https://1019.fun/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/mybatis%E5%8A%A8%E6%80%81sql/'>Mybatis动态SQL</a></h2>
+                        <span class="date">2018.12.08</span>
+                    </div>
+                    <div class="post_content markdown"><p>EmployeeMapper.xml</p>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt;</span>
+<span class="cp">&lt;!DOCTYPE mapper PUBLIC &#34;-//mybatis.org//DTD Mapper 3.0//EN&#34;
+</span><span class="cp">        &#34;http://mybatis.org/dtd/mybatis-3-mapper.dtd&#34; &gt;</span>
+
+<span class="nt">&lt;mapper</span> <span class="na">namespace=</span><span class="s">&#34;com.study.mybatis.dynamic.dao.EmployeeMapper&#34;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- if --&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getEmpsByConditionIf&#34;</span> <span class="na">resultType=</span><span class="s">&#34;com.study.mybatis.dynamic.pojo.Employee&#34;</span><span class="nt">&gt;</span>
+        select * from tbl_employee
+        <span class="nt">&lt;where&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;id!=null&#34;</span><span class="nt">&gt;</span>
+                id = #{id}
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;lastName != null and lastName != &#39;&#39;&#34;</span><span class="nt">&gt;</span>
+                and last_name = #{lastName}
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;email != null and email.trim() != &#39;&#39;&#34;</span><span class="nt">&gt;</span>
+                and last_name = #{lastName}
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;gender == 0 or gender == 1&#34;</span><span class="nt">&gt;</span>
+                and gender = #{gender}
+            <span class="nt">&lt;/if&gt;</span>
+        <span class="nt">&lt;/where&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+    <span class="c">&lt;!-- trim : 自定义字符串截取
+</span><span class="c">        prefix：字符串前面+
+</span><span class="c">        prefixOverrides：字符串前面-
+</span><span class="c">        suffix：字符串后面+
+</span><span class="c">        suffixOverrides：字符串前面-
+</span><span class="c">    --&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getEmpsByConditionTrim&#34;</span> <span class="na">resultType=</span><span class="s">&#34;com.study.mybatis.dynamic.pojo.Employee&#34;</span><span class="nt">&gt;</span>
+        select * from tbl_employee
+        <span class="nt">&lt;trim</span> <span class="na">suffixOverrides=</span><span class="s">&#34;and&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;id!=null&#34;</span><span class="nt">&gt;</span>
+                id = #{id} and
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;lastName != null and lastName != &#39;&#39;&#34;</span><span class="nt">&gt;</span>
+                last_name = #{lastName} and
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;email != null and email.trim() != &#39;&#39;&#34;</span><span class="nt">&gt;</span>
+                last_name like #{lastName} and
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;gender == 0 or gender == 1&#34;</span><span class="nt">&gt;</span>
+                gender = #{gender}
+            <span class="nt">&lt;/if&gt;</span>
+        <span class="nt">&lt;/trim&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+
+    <span class="c">&lt;!-- choose --&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getEmpsByConditionChose&#34;</span> <span class="na">resultType=</span><span class="s">&#34;com.study.mybatis.dynamic.pojo.Employee&#34;</span><span class="nt">&gt;</span>
+        select * from tbl_employee
+        <span class="nt">&lt;where&gt;</span>
+            <span class="nt">&lt;choose&gt;</span>
+                <span class="nt">&lt;when</span> <span class="na">test=</span><span class="s">&#34;id != null&#34;</span><span class="nt">&gt;</span>
+                    id = #{id}
+                <span class="nt">&lt;/when&gt;</span>
+                <span class="nt">&lt;when</span> <span class="na">test=</span><span class="s">&#34;lastName != null&#34;</span><span class="nt">&gt;</span>
+                    last_name like #{lastName}
+                <span class="nt">&lt;/when&gt;</span>
+                <span class="nt">&lt;when</span> <span class="na">test=</span><span class="s">&#34;email != null&#34;</span><span class="nt">&gt;</span>
+                    email = #{email}
+                <span class="nt">&lt;/when&gt;</span>
+                <span class="nt">&lt;otherwise&gt;</span>
+                    gender = #{gender}
+                <span class="nt">&lt;/otherwise&gt;</span>
+            <span class="nt">&lt;/choose&gt;</span>
+        <span class="nt">&lt;/where&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+
+    <span class="c">&lt;!-- set --&gt;</span>
+    <span class="nt">&lt;update</span> <span class="na">id=</span><span class="s">&#34;updateEmpSet&#34;</span><span class="nt">&gt;</span>
+        update tbl_employee
+        <span class="nt">&lt;set&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;lastName != null&#34;</span><span class="nt">&gt;</span>
+                last_name = #{lastName},
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;email != null&#34;</span><span class="nt">&gt;</span>
+                email = #{email},
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;gender != null&#34;</span><span class="nt">&gt;</span>
+                gender = #{gender},
+            <span class="nt">&lt;/if&gt;</span>
+        <span class="nt">&lt;/set&gt;</span>
+        <span class="nt">&lt;where&gt;</span>
+            id = #{id}
+        <span class="nt">&lt;/where&gt;</span>
+    <span class="nt">&lt;/update&gt;</span>
+
+    <span class="nt">&lt;update</span> <span class="na">id=</span><span class="s">&#34;updateEmpTrim&#34;</span><span class="nt">&gt;</span>
+        update tbl_employee
+        <span class="nt">&lt;trim</span> <span class="na">prefix=</span><span class="s">&#34;set&#34;</span> <span class="na">suffixOverrides=</span><span class="s">&#34;,&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;lastName != null&#34;</span><span class="nt">&gt;</span>
+                last_name = #{lastName},
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;email != null&#34;</span><span class="nt">&gt;</span>
+                email = #{email},
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;gender != null&#34;</span><span class="nt">&gt;</span>
+                gender = #{gender},
+            <span class="nt">&lt;/if&gt;</span>
+        <span class="nt">&lt;/trim&gt;</span>
+        <span class="nt">&lt;where&gt;</span>
+            id = #{id}
+        <span class="nt">&lt;/where&gt;</span>
+    <span class="nt">&lt;/update&gt;</span>
+
+    <span class="c">&lt;!-- foreach --&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getEmpsByConditionForeach&#34;</span> <span class="na">resultType=</span><span class="s">&#34;com.study.mybatis.dynamic.pojo.Employee&#34;</span><span class="nt">&gt;</span>
+        select * from tbl_employee
+        <span class="nt">&lt;foreach</span> <span class="na">collection=</span><span class="s">&#34;ids&#34;</span> <span class="na">item=</span><span class="s">&#34;item_id&#34;</span> <span class="na">separator=</span><span class="s">&#34;,&#34;</span> <span class="na">open=</span><span class="s">&#34; where id in (&#34;</span> <span class="na">close=</span><span class="s">&#34;)&#34;</span><span class="nt">&gt;</span>
+            #{item_id}
+        <span class="nt">&lt;/foreach&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+    <span class="nt">&lt;insert</span> <span class="na">id=</span><span class="s">&#34;addEmps&#34;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- include 引用sql片段 --&gt;</span>
+        insert into tbl_employee (<span class="nt">&lt;include</span> <span class="na">refid=</span><span class="s">&#34;insertColumns&#34;</span><span class="nt">&gt;&lt;/include&gt;</span>)
+        values
+        <span class="nt">&lt;foreach</span> <span class="na">collection=</span><span class="s">&#34;emps&#34;</span> <span class="na">item=</span><span class="s">&#34;emp&#34;</span> <span class="na">separator=</span><span class="s">&#34;,&#34;</span><span class="nt">&gt;</span>
+            (#{emp.lastName},#{emp.email},#{emp.gender},#{emp.dept.id})
+        <span class="nt">&lt;/foreach&gt;</span>
+    <span class="nt">&lt;/insert&gt;</span>
+
+    <span class="c">&lt;!--
+</span><span class="c">    mybatis 内置参数:
+</span><span class="c">    _parameter: 代表整个参数，多个参数会封装成map
+</span><span class="c">    _databaseId: 若果配置了databaseIdProvider，_databaseId代表当前数据库的别名
+</span><span class="c">    --&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getEmpsTestInnerParams&#34;</span> <span class="na">resultType=</span><span class="s">&#34;com.study.mybatis.dynamic.pojo.Employee&#34;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;_databaseId==&#39;mysql&#39;&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;bind</span> <span class="na">name=</span><span class="s">&#34;_lastName&#34;</span> <span class="na">value=</span><span class="s">&#34;&#39;%&#39;+lastName+&#39;%&#39;&#34;</span><span class="nt">/&gt;</span>
+            select * from tbl_employee
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;_parameter != null&#34;</span><span class="nt">&gt;</span>
+                where last_name like #{_lastName}
+            <span class="nt">&lt;/if&gt;</span>
+        <span class="nt">&lt;/if&gt;</span>
+        <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;_databaseId==&#39;oracle&#39;&#34;</span><span class="nt">&gt;</span>
+            select * from employee
+        <span class="nt">&lt;/if&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+
+    <span class="c">&lt;!-- 抽取可重复使用的sql片段 --&gt;</span>
+    <span class="nt">&lt;sql</span> <span class="na">id=</span><span class="s">&#34;insertColumns&#34;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;_databaseId==&#39;oracle&#39;&#34;</span><span class="nt">&gt;</span>
+            last_name,email
+        <span class="nt">&lt;/if&gt;</span>
+        <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;_databaseId==&#39;mysql&#39;&#34;</span><span class="nt">&gt;</span>
+            last_name,email,gender,d_id
+        <span class="nt">&lt;/if&gt;</span>
+    <span class="nt">&lt;/sql&gt;</span>
+<span class="nt">&lt;/mapper&gt;</span>
+</code></pre></div><h2 id="github链接">github链接</h2>
+<p><a href="https://github.com/shijianliangs/study-java/tree/master/mybatis-dynamicsql">https://github.com/shijianliangs/study-java/tree/master/mybatis-dynamicsql</a></p>
+<h2 id="参考">参考</h2>
+<p><a href="https://ke.qq.com/course/199779?taid=1162699186834531">https://ke.qq.com/course/199779?taid=1162699186834531</a></p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="https://1019.fun/tags/java/">java</a>
+                                    
+                                    <a href="https://1019.fun/tags/mybatis/">mybatis</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="doc_comments"></div>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://varkai.com">Designed by VarKai,</a>
+        <a href="http://www.gohugo.io/">Proudly published with Hugo</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>Copyright © 2020 1019.fun All rights reserved.</span>
+    </div>
+</footer>
+    <script src="https://1019.fun/js/jquery-3.5.1.min.js"></script>
+<link href="https://1019.fun/css/fancybox.min.css" rel="stylesheet">
+<script src="https://1019.fun/js/fancybox.min.js"></script>
+<script src="https://1019.fun/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>

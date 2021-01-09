@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>proxychains on 壹零壹玖</title>
+    <link>https://1019.fun/tags/proxychains/</link>
+    <description>Recent content in proxychains on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/proxychains/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>proxychains让你的terminal健步如飞</title>
+      <link>https://1019.fun/posts/proxychains%E8%AE%A9%E4%BD%A0%E7%9A%84terminal%E5%81%A5%E6%AD%A5%E5%A6%82%E9%A3%9E/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/proxychains%E8%AE%A9%E4%BD%A0%E7%9A%84terminal%E5%81%A5%E6%AD%A5%E5%A6%82%E9%A3%9E/</guid>
+      <description>安装前 shijl:~ shijl$ wget www.google.com --2019-06-20 11:29:15-- http://www.google.com/ Resolving www.google.com (www.google.com)... 69.171.248.128 Connecting to www.google.com (www.google.com)|69.171.248.128|:80... failed: Operation timed out. 安装 brew install proxychains-ng 配置 编辑/usr/local/etc/proxychains.conf文件,最后一行添加
+socks5 127.0.0.1 1080 测试 shijl:~ shijl$ proxychains4 wget www.google.com [proxychains] config file found: /usr/local/etc/proxychains.conf [proxychains] preloading /usr/local/Cellar/proxychains-ng/4.14/lib/libproxychains4.dylib [proxychains] DLL init: proxychains-ng 4.14 --2019-06-20 11:37:50-- http://www.google.com/ Resolving www.google.com (www.google.com)... 224.0.0.1 Connecting to www.google.com (www.google.com)|224.0.0.1|:80... [proxychains] Strict chain ... 127.0.0.1:1080 ... www.google.com:80 ... OK connected. HTTP request sent, awaiting response.</description>
+    </item>
+    
+  </channel>
+</rss>

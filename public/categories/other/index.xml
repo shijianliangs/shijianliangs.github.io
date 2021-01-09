@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>other on 壹零壹玖</title>
+    <link>https://1019.fun/categories/other/</link>
+    <description>Recent content in other on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/categories/other/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>记录一次http升级https</title>
+      <link>https://1019.fun/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1http%E5%8D%87%E7%BA%A7https/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1http%E5%8D%87%E7%BA%A7https/</guid>
+      <description>问题 解决如图问题。ps:我的是 Nginx 服务器。
+解决 1. 腾讯云申请一个免费的SSL证书 https://buy.cloud.tencent.com/ssl?fromSource=ssl 接下来等待审核
+等了大概20分钟，速度还是很快的&amp;hellip;
+2. 下载证书并上传服务器 注意下载的压缩包解压出来，只是用Nginx的
+3. 配置Nginx 4. 重启Nginx 成功 参考 https://cloud.tencent.com/document/product/400/35244</description>
+    </item>
+    
+    <item>
+      <title>mac的launchpad设置</title>
+      <link>https://1019.fun/posts/mac%E7%9A%84launchpad%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/mac%E7%9A%84launchpad%E8%AE%BE%E7%BD%AE/</guid>
+      <description>设置 Launchpad 列数 defaults write com.apple.dock springboard-columns -int X 设置 Launchpad 行数 defaults write com.apple.dock springboard-rows -int Y 设置之后需要重启 killall Dock </description>
+    </item>
+    
+    <item>
+      <title>记录一次mac权限修复</title>
+      <link>https://1019.fun/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1mac%E6%9D%83%E9%99%90%E4%BF%AE%E5%A4%8D/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1mac%E6%9D%83%E9%99%90%E4%BF%AE%E5%A4%8D/</guid>
+      <description>问题 手欠执行了sudo chmod -R 664 /usr 直接导致shell命令无法执行，重启后无法进入系统
+恢复模式 首先想到的方式是重装系统，reboot，按住command+R进入恢复模式
+竟然看到了“时间机器”&amp;hellip;..
+那就先看看&amp;quot;时间机器&amp;quot;能不能恢复吧。恩，时间机器被我关了，没有可恢复的内容，放弃。
+那还是重装系统吧。
+重装系统需要联网，竟然连不上网了，放弃。
+尝试/usr权限修复
+/usr权限修复 还是先进入恢复模式，
+先挂载硬盘
+cd /Volumes/Macintosh\ HD 看了下别人电脑，权限大多755，先一把给个755权限
+sudo chmod -R 755 usr 特殊的几个文件
+chmod 555 usr/bin/nc chmod 555 usr/bin/logger chmod 555 usr/bin/login chmod u+s usr/bin/login 重启,可以进入系统了，开心。
+打开terminal，无法执行sudo
+Google了下，sudo的权限不对,继续进入恢复模式
+chmod u+s usr/bin/sudo 之后就变成这个样子了
+-rwsr-xr-x 1 root wheel 370720 May 4 15:02 /usr/bin/sudo 再次重启，成功，sudo也可以执行了。
+目前使用无影响，以后有问题再慢慢修复吧。
+总结 No Zuo No Die
+忘记截图了，纯文字感受下
+文笔粗糙请谅解</description>
+    </item>
+    
+    <item>
+      <title>sqlmap常用命令</title>
+      <link>https://1019.fun/posts/sqlmap%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/sqlmap%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>基本信息 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5（5代表level,0-5） 所有dbs sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5 --dbs 所有用户 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5 —users 当前使用的db sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5 --current-db 当前用户 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5 --current-user 某个库所有表名 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 1 -D test —tables 某个表所有列名 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 0 -D test -T deskstatus —columns 某个表所有数据 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 0 -D test -T deskstatus —dump 获取密码 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; --passwords 获取指定用户密码 sqlmap -u &amp;#34;http://localhost/test.</description>
+    </item>
+    
+    <item>
+      <title>如何将自己的域名CNAME到github.io</title>
+      <link>https://1019.fun/posts/%E5%A6%82%E4%BD%95%E5%B0%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8Dcname%E5%88%B0github.io/</link>
+      <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/%E5%A6%82%E4%BD%95%E5%B0%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8Dcname%E5%88%B0github.io/</guid>
+      <description>问题 将自己的域名CNAME到github.io
+解决   在shijianliangs.github.io的根目录下添加CNAME文件，写入你自己的域名
+ 注意这里只可以添加一个域名
+ ~ » cat CNAME blog.shijianliang.cn   域名解析配置
+  github仓库设置
+勾选ENforce HTTPS，域名自动跳转https。最后出现红框里的 绿色的提示，则代表成功。
+  </description>
+    </item>
+    
+    <item>
+      <title>MongoDB常用命令</title>
+      <link>https://1019.fun/posts/mongodb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/mongodb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>常用命令  显示数据库列表  show dbs  选择数据库  use db_name  显示当前库中所有的collection  show collections 参考 https://www.jianshu.com/p/0a52c672ae78</description>
+    </item>
+    
+    <item>
+      <title>proxifier排错</title>
+      <link>https://1019.fun/posts/proxifier%E6%8E%92%E9%94%99/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/proxifier%E6%8E%92%E9%94%99/</guid>
+      <description>环境 SSH Tunnel + Proxifier
+报错 ssh root@192.168.1.5 ssh_exchange_identification: read: Connection reset by peer 解决 Proxifier 中配置了所有 Applications 都走代理，未排除 SSH Tunnel，导致ssh连接错误
+新增 rule，让SSH Tunnel直接连接，不走代理</description>
+    </item>
+    
+    <item>
+      <title>git常用命令</title>
+      <link>https://1019.fun/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>初始化远程仓库 git init; git remote add origin https://github.com/xxxx/xxx.git 强制覆盖本地分支 git fetch --all git reset --hard origin/master git pull 删除已在远程仓库的.ignore文件 git rm -r --cached app/build #删除目录 git commit -m”rm app/build” git push # 然后再将需要新增的ignore文件加入.ignore中提交 </description>
+    </item>
+    
+    <item>
+      <title>TCP的3次握手</title>
+      <link>https://1019.fun/posts/tcp%E7%9A%843%E6%AC%A1%E6%8F%A1%E6%89%8B/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/tcp%E7%9A%843%E6%AC%A1%E6%8F%A1%E6%89%8B/</guid>
+      <description>3次握手 第1次代表A向B请求 第2次代表B确认收到A的请求，并向A发送请求 第3次代表A确认收到B的请求 4次挥手 第1次代表A告诉B，要关闭连接 第2次代表B收到A关闭连接的请求，并确认 第3次代表B关闭与A的连接 第4次代表A确认B的关闭连接 6种标志位 SYN：同步标志 ACK：确认标志 RST：复位标志 URG：紧急标志 PSH：推标志 FIN：结束标志 </description>
+    </item>
+    
+    <item>
+      <title>vuepress配置Valine评论插件</title>
+      <link>https://1019.fun/posts/vuepress%E9%85%8D%E7%BD%AEvaline%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/vuepress%E9%85%8D%E7%BD%AEvaline%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/</guid>
+      <description>1. 注册账号 前往https://leancloud.cn/注册账号
+2. 获取appId和appKey 路径 应用&amp;gt;设置&amp;gt;应用Keys
+3.配置config.js 在themeConfig节点下配置自己Valine信息
+module.exports = { ...... &amp;#34;themeConfig&amp;#34;: { ...... valineConfig: { appId: &amp;#39;xxxxxxxxxxxxxxxxxxxxxxx&amp;#39;,// your appId  appKey: &amp;#39;xxxxxxxxxxxxxxxxxxxxxxx&amp;#39;, // your appKey  } }, ...... } </description>
+    </item>
+    
+    <item>
+      <title>caddy权限控制</title>
+      <link>https://1019.fun/posts/caddy%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Tue, 08 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/caddy%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/</guid>
+      <description>编辑Caddyfile
+:9001 { root	/Users/shijl/book/public/ log	/Users/shijl/Downloads/9001_access.log errors /Users/shijl/Downloads/9001_errors.log basicauth test test { realm name / } } 效果 </description>
+    </item>
+    
+    <item>
+      <title>vuepress配置百度统计</title>
+      <link>https://1019.fun/posts/vuepress%E9%85%8D%E7%BD%AE%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/</link>
+      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/vuepress%E9%85%8D%E7%BD%AE%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/</guid>
+      <description>config.js module.exports = { ...... head: [ [&amp;#39;script&amp;#39;, {}, ` var _hmt = _hmt || []; (function() { var hm = document.createElement(&amp;#34;script&amp;#34;); hm.src = &amp;#34;https://hm.baidu.com/hm.js?xxxxxxxxxx&amp;#34;; var s = document.getElementsByTagName(&amp;#34;script&amp;#34;)[0]; s.parentNode.insertBefore(hm, s); })(); `] ] } 参考 https://www.codeleading.com/article/94892317519/</description>
+    </item>
+    
+    <item>
+      <title>http_vs_https</title>
+      <link>https://1019.fun/posts/http_vs_https/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/http_vs_https/</guid>
+      <description>定义     全称 中文释义     HTTP HyperText Transfer Protocol 超文本传输协议   HTTPS HyperText Transfer Protocol Secure/HyperText Transfer Protocol over Secure Socket Layer 安全地超文本传输协议    HTTP+SSL=HTTPS。通俗的讲，就是比http更加的安全。
+端口 HTTP使用80端口，HTTPS使用443端口。
+内容安全性 HTTP方式传输，明文传输，不安全。HTTPS方式传输，数据是加密，安全性高。
+其他 HTTPS协议需要到CA申请证书</description>
+    </item>
+    
+    <item>
+      <title>ubuntu安装v2ray服务端</title>
+      <link>https://1019.fun/posts/ubuntu%E5%AE%89%E8%A3%85v2ray%E6%9C%8D%E5%8A%A1%E7%AB%AF/</link>
+      <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/ubuntu%E5%AE%89%E8%A3%85v2ray%E6%9C%8D%E5%8A%A1%E7%AB%AF/</guid>
+      <description>bash &amp;lt;(curl -s -L https://git.io/v2ray.sh) </description>
+    </item>
+    
+    <item>
+      <title>ubuntu安装haproxy加速</title>
+      <link>https://1019.fun/posts/ubuntu%E5%AE%89%E8%A3%85haproxy%E5%8A%A0%E9%80%9F/</link>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/ubuntu%E5%AE%89%E8%A3%85haproxy%E5%8A%A0%E9%80%9F/</guid>
+      <description>1. 下载 haproxy sudo apt-get install haproxy 2. 配置 haproxy 打开/etc/haproxy/haproxy.cfg文件，删除原有内容。新增以下配置：
+global ulimit-n 51200 defaults log global mode tcp option dontlognull contimeout 1000 clitimeout 150000 srvtimeout 150000 frontend ss-in bind *:8388 #加速服务器端口 default_backend ss-out backend ss-out server server1 111.112.113.114:2222 maxconn 20480 #ss服务器ip、端口 3. 启动 haproxy sudo service haproxy restart SS客户端连接加速服务器的ip，其他与直接连SS服务器配置一致</description>
+    </item>
+    
+    <item>
+      <title>vue插件之vue-json-viewer</title>
+      <link>https://1019.fun/posts/vue%E6%8F%92%E4%BB%B6%E4%B9%8Bvue-json-viewer/</link>
+      <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/vue%E6%8F%92%E4%BB%B6%E4%B9%8Bvue-json-viewer/</guid>
+      <description>安装 npm install vue-json-viewer --save 使用 &amp;lt;!-- 默认不展开 --&amp;gt; &amp;lt;json-viewer :value=&amp;#34;jsonData&amp;#34;&amp;gt;&amp;lt;/json-viewer&amp;gt; &amp;lt;!-- 默认展开 --&amp;gt; &amp;lt;json-viewer :value=&amp;#34;jsonData&amp;#34; :expand-depth=5 copyable boxed sort&amp;gt;&amp;lt;/json-viewer&amp;gt; import Vue from &amp;#39;vue&amp;#39; import JsonViewer from &amp;#39;../../node_modules/vue-json-viewer&amp;#39; Vue.use(JsonViewer) data() { return { jsonData: {&amp;#34;a&amp;#34;:[{&amp;#34;b&amp;#34;:&amp;#34;v&amp;#34;},{&amp;#34;c&amp;#34;:5}],&amp;#34;M&amp;#34;:&amp;#34;n&amp;#34;} } } 效果 参考 https://blog.csdn.net/sanlingwu/article/details/84141673</description>
+    </item>
+    
+  </channel>
+</rss>

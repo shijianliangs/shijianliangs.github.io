@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tvp on 壹零壹玖</title>
+    <link>https://1019.fun/tags/tvp/</link>
+    <description>Recent content in tvp on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/tvp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TCP的3次握手</title>
+      <link>https://1019.fun/posts/tcp%E7%9A%843%E6%AC%A1%E6%8F%A1%E6%89%8B/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/tcp%E7%9A%843%E6%AC%A1%E6%8F%A1%E6%89%8B/</guid>
+      <description>3次握手 第1次代表A向B请求 第2次代表B确认收到A的请求，并向A发送请求 第3次代表A确认收到B的请求 4次挥手 第1次代表A告诉B，要关闭连接 第2次代表B收到A关闭连接的请求，并确认 第3次代表B关闭与A的连接 第4次代表A确认B的关闭连接 6种标志位 SYN：同步标志 ACK：确认标志 RST：复位标志 URG：紧急标志 PSH：推标志 FIN：结束标志 </description>
+    </item>
+    
+  </channel>
+</rss>

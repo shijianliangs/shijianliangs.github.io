@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on 壹零壹玖</title>
+    <link>https://1019.fun/tags/php/</link>
+    <description>Recent content in php on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mac安装php的redis插件</title>
+      <link>https://1019.fun/posts/mac%E5%AE%89%E8%A3%85php%E7%9A%84redis%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/mac%E5%AE%89%E8%A3%85php%E7%9A%84redis%E6%8F%92%E4%BB%B6/</guid>
+      <description>mac安装php的redis插件 执行连接redis的操作遇到报错:
+Fatal error&amp;lt;/b&amp;gt;: Uncaught Error: Class &amp;#39;RedisCluster&amp;#39; not found in... 安装  下载php-redis curl -O https://nodeload.github.com/nicolasff/phpredis/zip/master  解压 unzip phpredis-master.zip &amp;amp;&amp;amp; cd phpredis-master  动态安装 phpize  编译 ./configure  安装 make &amp;amp;&amp;amp; make install  修改php.ini,插入: extension=redis.so  重启php-fpm 查看是否安装成功 shijl:7.4 shijl$ php -m | grep redis redis   参考： https://panxu.net/article/8400.html</description>
+    </item>
+    
+    <item>
+      <title>php-fpm以root用户启动报错</title>
+      <link>https://1019.fun/posts/php-fpm%E4%BB%A5root%E7%94%A8%E6%88%B7%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99/</link>
+      <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/php-fpm%E4%BB%A5root%E7%94%A8%E6%88%B7%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99/</guid>
+      <description>报错如下 -bash-4.2# ./opt/remi/php73/root/usr/sbin/php-fpm [21-Oct-2019 16:49:26] ERROR: [pool www] please specify user and group other than root [21-Oct-2019 16:49:26] ERROR: FPM initialization failed 解决 启动添加-R参数
+-bash-4.2# sudo ./opt/remi/php73/root/usr/sbin/php-fpm -R </description>
+    </item>
+    
+    <item>
+      <title>caddy&#43;php环境搭建</title>
+      <link>https://1019.fun/posts/caddy&#43;php%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/caddy&#43;php%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>什么是caddy？ Caddy服务器（或称Caddy Web）是一个开源的，使用 Golang 编写，支持 HTTP/2 的 Web 服务端。它使用 Golang 标准库提供 HTTP 功能。
+caddy的特性 caddy的部署 1.安装php brew install php@7.2 2.安装caddy curl https://getcaddy.com | bash -s personal 3.配置Caddy文件 Caddyfile
+# 域名解析方式 # caddy会自动帮助申请证书，可以https访问，无需配置 www.1019.fun { root /home/ubuntu/www.1019.fun log /home/ubuntu/www.1019.fun/access.log errors /home/ubuntu/www.1019.fun/errors.log # PHP-FPM Configuration for Caddy fastcgi / localhost:9000 php } # ip方式 :9001 { root /Users/shijl/GitBook/Library/Import/gbook1/_book log /Users/shijl/Downloads/gbook1_access.log errors /Users/shijl/Downloads/gbook1_errors.log # PHP-FPM Configuration for Caddy fastcgi / localhost:9000 php } 4.</description>
+    </item>
+    
+    <item>
+      <title>ubuntu&#43;apache&#43;php&#43;mysql环境搭建</title>
+      <link>https://1019.fun/posts/ubuntu&#43;apache&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/ubuntu&#43;apache&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>1. 安装apache2 apt-get install apache2 检查是否安装成功，浏览器输入服务器ip，出现下图即代表安装启动成功 2. 安装php7.0 apt-get install php7.0 3. 安装apache的php7.0支持模块 apt-get install libapache2-mod-php7.0 4. 安装mysql-server apt-get install mysql-server #过程会提示设置密码，正常设置即可 5. 校验mysql是否安装成功 mysql -u root -p #成功登录即可 6. 修改apache的php主目录 vim /etc/apache2/sites-available/000-default.conf 修改成/var/www 7. 重启apache服务 service apache2 restart 8. 在/var/www写一个测试的脚本 index.php
+&amp;lt;?php echo &amp;#34;Hello World&amp;#34;; ?&amp;gt; 9. Finish </description>
+    </item>
+    
+    <item>
+      <title>ubuntu&#43;nginx&#43;php&#43;mysql环境搭建</title>
+      <link>https://1019.fun/posts/ubuntu&#43;nginx&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/ubuntu&#43;nginx&#43;php&#43;mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>1. 安装nginx apt-get install nginx 检查是否安装成功，浏览器输入服务器ip，出现下图即代表安装启动成功 2. 安装php7.0-fpm apt-get install php7.0-fpm 3. 启动php7.0-fpm service php7.0-fpm restart 4. 安装mysql-server apt-get install mysql-server #过程会提示设置密码，正常设置即可 5. 校验mysql是否安装成功 mysql -u root -p #成功登录即可 6. 修改nginx配置 vim /etc/nginx/sites-enabled/default server { listen 80; listen [::]:80; # listen [::]:443 ssl http2; # listen 443 ssl http2; # include ssl.conf; # ssl_certificate /path/to/crt; # ssl_certificate_key /path/to/key; root /var/www; index index.html index.htm index.php; server_name server_domain_or_IP; location / { try_files $uri $uri/ =404; } location /phpmyadmin { index index.</description>
+    </item>
+    
+    <item>
+      <title>phpMyAdmin安装</title>
+      <link>https://1019.fun/posts/phpmyadmin%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/phpmyadmin%E5%AE%89%E8%A3%85/</guid>
+      <description>1. phpMyAdmin官网下载 https://www.phpmyadmin.net/downloads
+或者直接下载到/var/www
+wget https://files.phpmyadmin.net/phpMyAdmin/4.8.5/phpMyAdmin-4.8.5-all-languages.tar.gz 2. 解压 tar -zxvf phpMyAdmin-4.8.5-all-languages.tar.gz 3. 删除压缩包 rm phpMyAdmin-4.8.5-all-languages.tar.gz 4. 改名 mv phpMyAdmin-4.8.5-all-languages phpmyadmin 5. 配置 cd phpmyadmin;mkdir tmp;chmod 777 tmp 6. 服务器访问 http://xxx.xxx.xxx.xxx/phpmyadmin </description>
+    </item>
+    
+  </channel>
+</rss>

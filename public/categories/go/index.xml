@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go on 壹零壹玖</title>
+    <link>https://1019.fun/categories/go/</link>
+    <description>Recent content in go on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>go的交叉编译</title>
+      <link>https://1019.fun/posts/go%E7%9A%84%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/go%E7%9A%84%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</guid>
+      <description>linux 64-bit CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build xxx.go windows 64-bit CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build xxx.go mac 64-bit CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build xxx.go 参考 https://blog.csdn.net/panshiqu/article/details/53788067</description>
+    </item>
+    
+    <item>
+      <title>golang_http_client_demo</title>
+      <link>https://1019.fun/posts/golang_http_client_demo/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/golang_http_client_demo/</guid>
+      <description>golang http client demo package main import ( &amp;#34;crypto/tls&amp;#34; &amp;#34;encoding/json&amp;#34; &amp;#34;fmt&amp;#34; &amp;#34;io/ioutil&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;net/url&amp;#34; &amp;#34;strings&amp;#34; &amp;#34;time&amp;#34; ) func main() { // simple Get 	response, err := http.Get(&amp;#34;https://www.baidu.com&amp;#34;) if err != nil { fmt.Println(err) } defer response.Body.Close() bytes, err := ioutil.ReadAll(response.Body) if err != nil { fmt.Println(err) } contents := string(bytes) fmt.Println(contents) // simple Post Form 	params := url.Values{ &amp;#34;P1&amp;#34;: {&amp;#34;p1&amp;#34;}, &amp;#34;P2&amp;#34;: {&amp;#34;p2&amp;#34;}, } response, err = http.Post(&amp;#34;https://www.baidu.com&amp;#34;, &amp;#34;application/x-www-form-urlencoded&amp;#34;, strings.</description>
+    </item>
+    
+    <item>
+      <title>搭建自己的slide文件解析服务器</title>
+      <link>https://1019.fun/posts/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84slide%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84slide%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>1.安装golang apt install golang 2.安装talksapp go get github.com/golang/gddo/talksapp 3.下载google sdk并解压 wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-245.0.0-linux-x86_64.tar.gz tar -zxvf google-cloud-sdk-245.0.0-linux-x86_64.tar.gz 4.执行自动安装程序 ./google-cloud-sdk/install.sh 5.初始化 ./google-cloud-sdk/bin/gcloud init 6.执行talksapp安装脚本 先进入子目录再执行安装，否则会报错
+cd go/src/github.com/golang/gddo/talksapp/;./setup.sh 7.启动服务 google-cloud-sdk/bin/dev_appserver.py go/src/github.com/golang/gddo/talksapp/ 这个时候就可以解析托管在github的.slide文件了
+https://www.shijianliang.cn/github.com/shijianliangs/gotalks/demo.slide
+参考 https://tonybai.com/2015/07/27/make-a-mirror-of-gotalks-appsport-app</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh2_shell on 壹零壹玖</title>
+    <link>https://1019.fun/tags/ssh2_shell/</link>
+    <description>Recent content in ssh2_shell on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/ssh2_shell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mac安装php之ssh2_shell扩展</title>
+      <link>https://1019.fun/posts/mac%E5%AE%89%E8%A3%85php%E4%B9%8Bssh2_shell%E6%89%A9%E5%B1%95/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/mac%E5%AE%89%E8%A3%85php%E4%B9%8Bssh2_shell%E6%89%A9%E5%B1%95/</guid>
+      <description>问题 Error : Class &amp;#39;ssh2_connect&amp;#39; not found 通过源码安装 wget https://pecl.php.net/get/ssh2-1.1.2.tgz tar -zxvf ssh2-1.1.2.tgz cd ssh2-1.1.2 phpize ./configure --with-ssh2 make make install 配置php.ini extensions=ssh2.so 校验 ~ » php -m | grep ssh2 ssh2 </description>
+    </item>
+    
+  </channel>
+</rss>

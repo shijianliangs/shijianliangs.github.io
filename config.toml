@@ -1,0 +1,49 @@
+baseURL = "https://1019.fun/"
+languageCode = "en-us"
+title = "壹零壹玖"
+theme = "zozo"
+paginate = 10
+enableEmoji = true
+googleAnalytics = ""                   # your google analytics id
+disqusShortname = ""                   # your discuss shortname
+
+pygmentsUseClasses = true
+pygmentCodeFences = true
+pygmentscodefencesguesssyntax = true
+
+[author]
+ name = "shijianliangs"
+
+[[menu.main]]
+ name = "Home"
+ weight = 10
+ identifier = "home"
+ url = "/"
+[[menu.main]]
+  name = "Archive"
+  weight = 20
+  identifier = "archive"
+  url = "/posts/"
+[[menu.main]]
+  name = "Tags"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "About"
+  weight = 40
+  identifier = "about"
+  url = "/about/"
+
+[params]
+  subTitle = "Record Everything."                                       # site's subTitle  # 网站二级标题
+  footerSlogan = "Copyright © 2020 1019.fun All rights reserved."                                   # site's footer slogan  # 网站页脚标语
+  keywords = ["Hugo","theme","zozo"]                                  # site's keywords  # 网站关键字
+  description = "日志记录"                        # site's description  # 网站描述
+  enableMathJax = true                                                 # enable mathjax  # 是否使用mathjax（数学公式）
+  enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
+  mainSections = ["posts","post"]
+
+
+
+

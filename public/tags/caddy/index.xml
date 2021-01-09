@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>caddy on 壹零壹玖</title>
+    <link>https://1019.fun/tags/caddy/</link>
+    <description>Recent content in caddy on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/caddy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>caddy&#43;php环境搭建</title>
+      <link>https://1019.fun/posts/caddy&#43;php%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/caddy&#43;php%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>什么是caddy？ Caddy服务器（或称Caddy Web）是一个开源的，使用 Golang 编写，支持 HTTP/2 的 Web 服务端。它使用 Golang 标准库提供 HTTP 功能。
+caddy的特性 caddy的部署 1.安装php brew install php@7.2 2.安装caddy curl https://getcaddy.com | bash -s personal 3.配置Caddy文件 Caddyfile
+# 域名解析方式 # caddy会自动帮助申请证书，可以https访问，无需配置 www.1019.fun { root /home/ubuntu/www.1019.fun log /home/ubuntu/www.1019.fun/access.log errors /home/ubuntu/www.1019.fun/errors.log # PHP-FPM Configuration for Caddy fastcgi / localhost:9000 php } # ip方式 :9001 { root /Users/shijl/GitBook/Library/Import/gbook1/_book log /Users/shijl/Downloads/gbook1_access.log errors /Users/shijl/Downloads/gbook1_errors.log # PHP-FPM Configuration for Caddy fastcgi / localhost:9000 php } 4.</description>
+    </item>
+    
+    <item>
+      <title>caddy权限控制</title>
+      <link>https://1019.fun/posts/caddy%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Tue, 08 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/caddy%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/</guid>
+      <description>编辑Caddyfile
+:9001 { root	/Users/shijl/book/public/ log	/Users/shijl/Downloads/9001_access.log errors /Users/shijl/Downloads/9001_errors.log basicauth test test { realm name / } } 效果 </description>
+    </item>
+    
+  </channel>
+</rss>

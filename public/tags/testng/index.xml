@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>testng on 壹零壹玖</title>
+    <link>https://1019.fun/tags/testng/</link>
+    <description>Recent content in testng on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/testng/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TestNG传参的几种方式</title>
+      <link>https://1019.fun/posts/testng%E4%BC%A0%E5%8F%82%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/testng%E4%BC%A0%E5%8F%82%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</guid>
+      <description>1.通过Xml文件传参 TestNg.java
+package com.test; import org.testng.annotations.Parameters; import org.testng.annotations.Test; public class TestNG { @Parameters({&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;}) @Test public static void testNG(String a, String b) { System.out.println(a); System.out.println(b); } } testNG.xml
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&amp;lt;!DOCTYPE suite SYSTEM &amp;#34;http://testng.org/testng-1.0.dtd&amp;#34; &amp;gt; &amp;lt;suite name=&amp;#34;test&amp;#34;&amp;gt; &amp;lt;!-- 参数配置 --&amp;gt; &amp;lt;parameter name=&amp;#34;a&amp;#34; value=&amp;#34;aaa&amp;#34;/&amp;gt; &amp;lt;parameter name=&amp;#34;b&amp;#34; value=&amp;#34;bbb&amp;#34;/&amp;gt; &amp;lt;!-- 执行测试 --&amp;gt; &amp;lt;test name=&amp;#34;test&amp;#34;&amp;gt;&amp;lt;classes&amp;gt;&amp;lt;class name=&amp;#34;com.test.TestNG&amp;#34;/&amp;gt;&amp;lt;/classes&amp;gt;&amp;lt;/test&amp;gt; &amp;lt;/suite&amp;gt; 执行结果：
+aaa bbb 2.通过@DataProvider传参 package com.test; import org.testng.annotations.DataProvider; import org.testng.annotations.Test; public class TestNG { @DataProvider(name = &amp;#34;xxx&amp;#34;) public static Object[][] xxx() { return new Object[][]{ {&amp;#34;aaa&amp;#34;, &amp;#34;bbb&amp;#34;}, }; } @Test(dataProvider = &amp;#34;xxx&amp;#34;) public static void testNG(String a, String b) { System.</description>
+    </item>
+    
+    <item>
+      <title>TestNG@Test注解配置</title>
+      <link>https://1019.fun/posts/testngtest%E6%B3%A8%E8%A7%A3%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/testngtest%E6%B3%A8%E8%A7%A3%E9%85%8D%E7%BD%AE/</guid>
+      <description>alwaysRun If set to true, this test method will always be run even if it depends on a method that failed.
+/** * 默认: false * 设置为 true ，则次方法依赖的方法失败，该方法也会运行。 */ @Test(alwaysRun = true) dataProvider The name of the data provider for this test method.
+/** * 设置该方法的执行参数 */ @DataProvider(name = &amp;#34;xxx&amp;#34;) public static Object[][] xxx() { return new Object[][]{ {&amp;#34;aaa&amp;#34;, &amp;#34;bbb&amp;#34;}, }; } @Test(dataProvider = &amp;#34;xxx&amp;#34;) dataProviderClass The class where to look for the data provider.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>django on 壹零壹玖</title>
+    <link>https://1019.fun/tags/django/</link>
+    <description>Recent content in django on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Django模型进行Mysql操作</title>
+      <link>https://1019.fun/posts/django%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8Cmysql%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/django%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8Cmysql%E6%93%8D%E4%BD%9C/</guid>
+      <description># 模型类 class Student(models.Model): id = models.AutoField(primary_key = True) name = models.CharField(max_length = 32) age = models.IntegerField(blank = True) # 增 stu = Student(name = &amp;#39;Bob&amp;#39;, age = 10) stu.save() # 删 Student.objects.filter(name = &amp;#39;Bob&amp;#39;).delete() # 改 Student.objects.filter(name = &amp;#39;Bob&amp;#39;).update(&amp;#39;age&amp;#39; = 12) # 查 Student.objects.filter(name = &amp;#39;Bob&amp;#39;) </description>
+    </item>
+    
+    <item>
+      <title>Django设置允许跨域请求</title>
+      <link>https://1019.fun/posts/django%E8%AE%BE%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</link>
+      <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/django%E8%AE%BE%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</guid>
+      <description>1. 安装django-cors-headers pip install django-cors-headers 2. 修改settings.py文件 # Step 1 INSTALLED_APPS = [ ... &amp;#39;corsheaders&amp;#39; # cors ] # Step 2 MIDDLEWARE = [ ... &amp;#39;corsheaders.middleware.CorsMiddleware&amp;#39;, &amp;#39;django.middleware.common.CommonMiddleware&amp;#39;, ... # &amp;#39;django.middleware.csrf.CsrfViewMiddleware&amp;#39;, ] # Step3 ALLOWED_HOSTS = [ &amp;#39;*&amp;#39;, ] CORS_ALLOW_CREDENTIALS = True CORS_ORIGIN_ALLOW_ALL = True CORS_ALLOW_HEADERS = (&amp;#39;*&amp;#39;) </description>
+    </item>
+    
+    <item>
+      <title>Django实现服务端接口</title>
+      <link>https://1019.fun/posts/django%E5%AE%9E%E7%8E%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8E%A5%E5%8F%A3/</link>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/django%E5%AE%9E%E7%8E%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8E%A5%E5%8F%A3/</guid>
+      <description>为什么要学习Django？  软件测试人员该学习 Python 的七个理由 Django是当前Python世界里最负盛名且最成熟的Web框架  基于以上两点，决定学习下这个比较火的Python框架
+安装配置 1. 安装Django pip install Django 2. 新建Django项目 django-admin startproject demo 3. 创建应用和接口 新建 hello 应用
+python manage.py startapp hello 应用创建成功后，在 demo 项目生成 hello 目录
+hello ├── __init__.py ├── __pycache__ │ └── __init__.cpython-37.pyc ├── admin.py ├── apps.py ├── migrations │ └── __init__.py ├── models.py ├── tests.py └── views.py 在views.py创建接口，代码如下
+from django.http import JsonResponse def hello(request): return JsonResponse({&amp;#39;code&amp;#39;: 200, &amp;#39;msg&amp;#39;: &amp;#39;hello&amp;#39;, &amp;#39;data&amp;#39;: &amp;#39;hello&amp;#39;}) 将一个URL映射给此接口，在hello目录中新建一个urls.</description>
+    </item>
+    
+    <item>
+      <title>Django常见报错</title>
+      <link>https://1019.fun/posts/django%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99/</link>
+      <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/django%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99/</guid>
+      <description> In order to allow non-dict objects to be serialized  return JsonResponse(&amp;#39;aaa&amp;#39;) 修改为
+return JsonResponse(&amp;#39;aaa&amp;#39;, safe = False)  You called this URL via POST, but the URL doesn&amp;rsquo;t end in a slash and you have APPEND_SLASH set 请求的url最后带上/  </description>
+    </item>
+    
+  </channel>
+</rss>

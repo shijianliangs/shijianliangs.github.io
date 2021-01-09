@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="shijianliangs" />
+	
+	
+	
+	<title>记录一次http升级https ｜ 壹零壹玖</title>
+	
+    
+    
+    <meta name="description" content="问题 解决如图问题。ps:我的是 Nginx 服务器。
+解决 1. 腾讯云申请一个免费的SSL证书 https://buy.cloud.tencent.com/ssl?fromSource=ssl 接下来等待审核
+等了大概20分钟，速度还是很快的&amp;hellip;
+2. 下载证书并上传服务器 注意下载的压缩包解压出来，只是用Nginx的
+3. 配置Nginx 4. 重启Nginx 成功 参考 https://cloud.tencent.com/document/product/400/35244" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="https://1019.fun/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://1019.fun/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://1019.fun/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://1019.fun/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">Archive</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">Tags</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="https://1019.fun/">
+                    <span>壹零壹玖</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">Record Everything.</p>
+            <div class="my_socials">
+                
+                <a href="https://1019.fun/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1http%E5%8D%87%E7%BA%A7https/'>记录一次http升级https</a></h2>
+                        <span class="date">2020.06.20</span>
+                    </div>
+                    <div class="post_content markdown"><h2 id="问题">问题</h2>
+<p><img src="https://typora-1258677967.cos.ap-chengdu.myqcloud.com/image-20191016103452344.png" alt="image-20191016103452344"></p>
+<p>解决如图问题。ps:我的是 Nginx 服务器。</p>
+<h2 id="解决">解决</h2>
+<h3 id="1-腾讯云申请一个免费的ssl证书">1. 腾讯云申请一个免费的SSL证书</h3>
+<p><a href="https://buy.cloud.tencent.com/ssl?fromSource=ssl">https://buy.cloud.tencent.com/ssl?fromSource=ssl</a>
+<img src="https://typora-1258677967.cos.ap-chengdu.myqcloud.com/image-20191016103521168.png" alt="image-20191016103521168"></p>
+<p>接下来等待审核</p>
+<p>等了大概20分钟，速度还是很快的&hellip;</p>
+<h3 id="2-下载证书并上传服务器">2. 下载证书并上传服务器</h3>
+<p>注意下载的压缩包解压出来，只是用Nginx的</p>
+<h3 id="3-配置nginx">3. 配置Nginx</h3>
+<p><img src="https://typora-1258677967.cos.ap-chengdu.myqcloud.com/image-20191016103549433.png" alt="image-20191016103549433"></p>
+<h3 id="4-重启nginx">4. 重启Nginx</h3>
+<h2 id="成功">成功</h2>
+<p><img src="https://typora-1258677967.cos.ap-chengdu.myqcloud.com/image-20191016103615220.png" alt="image-20191016103615220"></p>
+<h2 id="参考">参考</h2>
+<p><a href="https://cloud.tencent.com/document/product/400/35244">https://cloud.tencent.com/document/product/400/35244</a></p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="https://1019.fun/tags/http/">http</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="doc_comments"></div>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://varkai.com">Designed by VarKai,</a>
+        <a href="http://www.gohugo.io/">Proudly published with Hugo</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>Copyright © 2020 1019.fun All rights reserved.</span>
+    </div>
+</footer>
+    <script src="https://1019.fun/js/jquery-3.5.1.min.js"></script>
+<link href="https://1019.fun/css/fancybox.min.css" rel="stylesheet">
+<script src="https://1019.fun/js/fancybox.min.js"></script>
+<script src="https://1019.fun/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>

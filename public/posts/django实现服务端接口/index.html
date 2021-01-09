@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="shijianliangs" />
+	
+	
+	
+	<title>Django实现服务端接口 ｜ 壹零壹玖</title>
+	
+    
+    
+    <meta name="description" content="为什么要学习Django？  软件测试人员该学习 Python 的七个理由 Django是当前Python世界里最负盛名且最成熟的Web框架  基于以上两点，决定学习下这个比较火的Python框架
+安装配置 1. 安装Django pip install Django 2. 新建Django项目 django-admin startproject demo 3. 创建应用和接口 新建 hello 应用
+python manage.py startapp hello 应用创建成功后，在 demo 项目生成 hello 目录
+hello ├── __init__.py ├── __pycache__ │ └── __init__.cpython-37.pyc ├── admin.py ├── apps.py ├── migrations │ └── __init__.py ├── models.py ├── tests.py └── views.py 在views.py创建接口，代码如下
+from django.http import JsonResponse def hello(request): return JsonResponse({&amp;#39;code&amp;#39;: 200, &amp;#39;msg&amp;#39;: &amp;#39;hello&amp;#39;, &amp;#39;data&amp;#39;: &amp;#39;hello&amp;#39;}) 将一个URL映射给此接口，在hello目录中新建一个urls." />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="https://1019.fun/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://1019.fun/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://1019.fun/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://1019.fun/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">Archive</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">Tags</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="https://1019.fun/">
+                    <span>壹零壹玖</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">Record Everything.</p>
+            <div class="my_socials">
+                
+                <a href="https://1019.fun/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/django%E5%AE%9E%E7%8E%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8E%A5%E5%8F%A3/'>Django实现服务端接口</a></h2>
+                        <span class="date">2019.11.25</span>
+                    </div>
+                    <div class="post_content markdown"><h2 id="为什么要学习django">为什么要学习Django？</h2>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/31805753">软件测试人员该学习 Python 的七个理由</a></li>
+<li><a href="https://docs.djangoproject.com/">Django</a>是当前Python世界里最负盛名且最成熟的Web框架</li>
+</ul>
+<p>基于以上两点，决定学习下这个比较火的Python框架</p>
+<h2 id="安装配置">安装配置</h2>
+<h3 id="1-安装django">1. 安装Django</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pip install Django
+</code></pre></div><h3 id="2-新建django项目">2. 新建Django项目</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">django-admin startproject demo
+</code></pre></div><h3 id="3-创建应用和接口">3. 创建应用和接口</h3>
+<p>新建 hello 应用</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">python manage.py startapp hello
+</code></pre></div><p>应用创建成功后，在 demo 项目生成 hello 目录</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hello
+├── __init__.py
+├── __pycache__
+│   └── __init__.cpython-37.pyc
+├── admin.py
+├── apps.py
+├── migrations
+│   └── __init__.py
+├── models.py
+├── tests.py
+└── views.py
+</code></pre></div><p>在<code>views.py</code>创建接口，代码如下</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">django.http</span> <span class="kn">import</span> <span class="n">JsonResponse</span>
+
+
+<span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span> <span class="s1">&#39;msg&#39;</span><span class="p">:</span> <span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="s1">&#39;hello&#39;</span><span class="p">})</span>
+</code></pre></div><p>将一个URL映射给此接口，在hello目录中新建一个<code>urls.py</code>文件，代码如下</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">views</span>
+
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">hello</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div><p>在<code>demo/urls.py</code>中指定我们创建的 hello.urls 模块</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
+<span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
+
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;admin/&#39;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;hello/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;hello.urls&#39;</span><span class="p">)),</span>
+<span class="p">]</span>
+</code></pre></div><h3 id="4-启动django服务">4. 启动Django服务</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">runserver</span>
+<span class="o">-----------------------------</span>
+<span class="n">November</span> <span class="mo">02</span><span class="p">,</span> <span class="mi">2019</span> <span class="o">-</span> <span class="mi">11</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mi">26</span>
+<span class="n">Django</span> <span class="n">version</span> <span class="mf">2.2</span><span class="o">.</span><span class="mi">6</span><span class="p">,</span> <span class="n">using</span> <span class="n">settings</span> <span class="s1">&#39;demo.settings&#39;</span>
+<span class="n">Starting</span> <span class="n">development</span> <span class="n">server</span> <span class="n">at</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">8000</span><span class="o">/</span>
+<span class="n">Quit</span> <span class="n">the</span> <span class="n">server</span> <span class="k">with</span> <span class="n">CONTROL</span><span class="o">-</span>
+</code></pre></div><h3 id="5-请求接口">5. 请求接口</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">~ » curl http://127.0.0.1:8000/hello/hello
+<span class="o">{</span><span class="s2">&#34;code&#34;</span>: 200, <span class="s2">&#34;msg&#34;</span>: <span class="s2">&#34;hello&#34;</span>, <span class="s2">&#34;data&#34;</span>: <span class="s2">&#34;hello&#34;</span><span class="o">}</span>
+</code></pre></div><p>这样一个最简单的接口就实现了</p>
+<h2 id="其他一些设置">其他一些设置</h2>
+<h3 id="1-配置mysql">1. 配置MySQL</h3>
+<ul>
+<li>
+<p>安装pymysql数据库驱动</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pip install pymysql
+</code></pre></div></li>
+<li>
+<p>配置Django中的DATABASE</p>
+<p>修改<code>settings.py</code>中的DATABASE</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">DATABASES</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;ENGINE&#39;</span><span class="p">:</span> <span class="s1">&#39;django.db.backends.mysql&#39;</span><span class="p">,</span>    <span class="c1">#数据库引擎</span>
+        <span class="s1">&#39;NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;django_demo&#39;</span><span class="p">,</span>  <span class="c1">#数据库名</span>
+        <span class="s1">&#39;USER&#39;</span><span class="p">:</span> <span class="s1">&#39;root&#39;</span><span class="p">,</span>   <span class="c1">#账户名</span>
+        <span class="s1">&#39;PASSWORD&#39;</span><span class="p">:</span> <span class="s1">&#39;root&#39;</span><span class="p">,</span> <span class="c1">#密码</span>
+        <span class="s1">&#39;HOST&#39;</span><span class="p">:</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="c1">#主机</span>
+        <span class="s1">&#39;PORT&#39;</span><span class="p">:</span> <span class="s1">&#39;3306&#39;</span><span class="p">,</span> <span class="c1">#端口</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>
+<p>修改<code>_init_.py</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pymysql</span>
+  
+<span class="n">pymysql</span><span class="o">.</span><span class="n">install_as_MySQLdb</span><span class="p">()</span>
+  
+<span class="n">TIME_ZONE</span> <span class="o">=</span> <span class="s1">&#39;Asia/Shanghai&#39;</span>
+</code></pre></div></li>
+<li>
+<p>执行数据迁移</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">python manage.py makemigrations
+python manage.py migrate
+</code></pre></div><p>执行完成后，看到数据表新建成功</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">mysql&gt; show tables<span class="p">;</span>
++----------------------------+
+<span class="p">|</span> Tables_in_django_demo      <span class="p">|</span>
++----------------------------+
+<span class="p">|</span> auth_group                 <span class="p">|</span>
+<span class="p">|</span> auth_group_permissions     <span class="p">|</span>
+<span class="p">|</span> auth_permission            <span class="p">|</span>
+<span class="p">|</span> auth_user                  <span class="p">|</span>
+<span class="p">|</span> auth_user_groups           <span class="p">|</span>
+<span class="p">|</span> auth_user_user_permissions <span class="p">|</span>
+<span class="p">|</span> django_admin_log           <span class="p">|</span>
+<span class="p">|</span> django_content_type        <span class="p">|</span>
+<span class="p">|</span> django_migrations          <span class="p">|</span>
+<span class="p">|</span> django_session             <span class="p">|</span>
++----------------------------+
+<span class="m">10</span> rows in <span class="nb">set</span> <span class="o">(</span>0.00 sec<span class="o">)</span>
+</code></pre></div></li>
+</ul>
+<h3 id="2-获取get参数">2. 获取Get参数</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">test_get</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="s1">&#39;参数p1:&#39;</span> <span class="o">+</span> <span class="n">request</span><span class="o">.</span><span class="n">GET</span><span class="p">[</span><span class="s1">&#39;p1&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;,参数p2:&#39;</span> <span class="o">+</span> <span class="n">request</span><span class="o">.</span><span class="n">GET</span><span class="p">[</span><span class="s1">&#39;p2&#39;</span><span class="p">])</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">~ » curl http://127.0.0.1:8000/hello/test_get<span class="se">\?</span>p1<span class="se">\=</span>aaa<span class="se">\&amp;</span>p2<span class="se">\=</span>bbb
+参数p1:aaa,参数p2:bbb
+</code></pre></div><h3 id="3-获取post参数">3. 获取Post参数</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">test_post</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="s1">&#39;参数p1:&#39;</span> <span class="o">+</span> <span class="n">request</span><span class="o">.</span><span class="n">POST</span><span class="p">[</span><span class="s1">&#39;p1&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;,参数p2:&#39;</span> <span class="o">+</span> <span class="n">request</span><span class="o">.</span><span class="n">POST</span><span class="p">[</span><span class="s1">&#39;p2&#39;</span><span class="p">])</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">~ » curl -d <span class="s1">&#39;p1=mmm&amp;p2=nnn&#39;</span> http://127.0.0.1:8000/hello/test_post      
+参数p1:mmm,参数p2:nnn
+</code></pre></div><h3 id="4获取applicationjson格式的post参数">4.获取application/json格式的Post参数</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">test_post_json</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">body</span><span class="p">))</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">~ » curl -H <span class="s2">&#34;Content-Type:application/json&#34;</span> -X POST -d <span class="s1">&#39;{&#34;p1&#34;:&#34;mmm&#34;,&#34;p2&#34;:&#34;nnn&#34;}&#39;</span> http://127.0.0.1:8000/hello/test_post_json   
+<span class="o">{</span><span class="s2">&#34;p1&#34;</span>: <span class="s2">&#34;mmm&#34;</span>, <span class="s2">&#34;p2&#34;</span>: <span class="s2">&#34;nnn&#34;</span><span class="o">}</span>
+</code></pre></div><h2 id="遇到的问题">遇到的问题</h2>
+<h3 id="1-makemigrations报错1">1. makemigrations报错1</h3>
+<p>django.core.exceptions.ImproperlyConfigured: mysqlclient 1.3.13 or newer is required; you have 0.9.3.</p>
+<p>解决方式：<code>base.py</code>35、36 行注释版本校验</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">version</span> <span class="o">=</span> <span class="n">Database</span><span class="o">.</span><span class="n">version_info</span>
+<span class="c1"># if version &lt; (1, 3, 13):</span>
+<span class="c1">#    raise ImproperlyConfigured(&#39;mysqlclient 1.3.13 or newer is required; you have %s.&#39; % Database.__version__)</span>
+</code></pre></div><h3 id="2-makemigrations报错2">2. makemigrations报错2</h3>
+<p>AttributeError: &lsquo;str&rsquo; object has no attribute &lsquo;decode&rsquo;</p>
+<p>解决方式：<code>operations.py</code>146 行，把 decode 改成 encode 即可</p>
+<h2 id="参考">参考</h2>
+<p><a href="https://docs.djangoproject.com/zh-hans/2.2/">https://docs.djangoproject.com/zh-hans/2.2/</a></p>
+<p><a href="https://segmentfault.com/a/1190000016049962">https://segmentfault.com/a/1190000016049962</a></p>
+<p><a href="https://blog.csdn.net/lijing742180/article/details/91966031">https://blog.csdn.net/lijing742180/article/details/91966031</a></p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="https://1019.fun/tags/python/">python</a>
+                                    
+                                    <a href="https://1019.fun/tags/django/">django</a>
+                                    
+                                    <a href="https://1019.fun/tags/demo/">demo</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="doc_comments"></div>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://varkai.com">Designed by VarKai,</a>
+        <a href="http://www.gohugo.io/">Proudly published with Hugo</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>Copyright © 2020 1019.fun All rights reserved.</span>
+    </div>
+</footer>
+    <script src="https://1019.fun/js/jquery-3.5.1.min.js"></script>
+<link href="https://1019.fun/css/fancybox.min.css" rel="stylesheet">
+<script src="https://1019.fun/js/fancybox.min.js"></script>
+<script src="https://1019.fun/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pytest on 壹零壹玖</title>
+    <link>https://1019.fun/tags/pytest/</link>
+    <description>Recent content in pytest on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/pytest/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>pytest中引入Django环境</title>
+      <link>https://1019.fun/posts/pytest%E4%B8%AD%E5%BC%95%E5%85%A5django%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/pytest%E4%B8%AD%E5%BC%95%E5%85%A5django%E7%8E%AF%E5%A2%83/</guid>
+      <description>常常在执行pytest单元测试的时候，找不到module，是因为没有引入Django的环境变量。需要单独引入，方法如下：
+import os import django def test(): os.environ.setdefault(&amp;#39;DJANGO_SETTINGS_MODULE&amp;#39;, &amp;#39;your_project.settings&amp;#39;) django.setup() from xxx.xxx import xxx </description>
+    </item>
+    
+  </channel>
+</rss>

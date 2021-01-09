@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>haproxy on 壹零壹玖</title>
+    <link>https://1019.fun/tags/haproxy/</link>
+    <description>Recent content in haproxy on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/haproxy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ubuntu安装haproxy加速</title>
+      <link>https://1019.fun/posts/ubuntu%E5%AE%89%E8%A3%85haproxy%E5%8A%A0%E9%80%9F/</link>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/ubuntu%E5%AE%89%E8%A3%85haproxy%E5%8A%A0%E9%80%9F/</guid>
+      <description>1. 下载 haproxy sudo apt-get install haproxy 2. 配置 haproxy 打开/etc/haproxy/haproxy.cfg文件，删除原有内容。新增以下配置：
+global ulimit-n 51200 defaults log global mode tcp option dontlognull contimeout 1000 clitimeout 150000 srvtimeout 150000 frontend ss-in bind *:8388 #加速服务器端口 default_backend ss-out backend ss-out server server1 111.112.113.114:2222 maxconn 20480 #ss服务器ip、端口 3. 启动 haproxy sudo service haproxy restart SS客户端连接加速服务器的ip，其他与直接连SS服务器配置一致</description>
+    </item>
+    
+  </channel>
+</rss>

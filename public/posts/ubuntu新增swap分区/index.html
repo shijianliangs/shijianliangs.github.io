@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="shijianliangs" />
+	
+	
+	
+	<title>ubuntu新增swap分区 ｜ 壹零壹玖</title>
+	
+    
+    
+    <meta name="description" content="系统版本信息
+root@vultr:~# cat /etc/lsb-release DISTRIB_ID=Ubuntu DISTRIB_RELEASE=18.04 DISTRIB_CODENAME=bionic DISTRIB_DESCRIPTION=&amp;#34;Ubuntu 18.04.1 LTS&amp;#34; 在执行apt命令的时候，报错了
+root@vultr:~# sudo apt-get upgrade E: Dynamic MMap ran out of room. Please increase the size of APT::Cache-Start. Current value: 42991616. (man 5 apt.conf) Reading package lists... Error! E: Dynamic MMap ran out of room. Please increase the size of APT::Cache-Start. Current value: 42991616. (man 5 apt.conf) E: Error occurred while processing r-cran-futile.logger (NewFileVer1) E: Problem with MergeList /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_universe_binary-i386_Packages E: The package lists or status file could not be parsed or opened." />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="https://1019.fun/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://1019.fun/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://1019.fun/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://1019.fun/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">Archive</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">Tags</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="https://1019.fun/">
+                    <span>壹零壹玖</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">Record Everything.</p>
+            <div class="my_socials">
+                
+                <a href="https://1019.fun/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/ubuntu%E6%96%B0%E5%A2%9Eswap%E5%88%86%E5%8C%BA/'>ubuntu新增swap分区</a></h2>
+                        <span class="date">2018.12.12</span>
+                    </div>
+                    <div class="post_content markdown"><p>系统版本信息</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@vultr:~# cat /etc/lsb-release
+<span class="nv">DISTRIB_ID</span><span class="o">=</span>Ubuntu
+<span class="nv">DISTRIB_RELEASE</span><span class="o">=</span>18.04
+<span class="nv">DISTRIB_CODENAME</span><span class="o">=</span>bionic
+<span class="nv">DISTRIB_DESCRIPTION</span><span class="o">=</span><span class="s2">&#34;Ubuntu 18.04.1 LTS&#34;</span>
+</code></pre></div><p>在执行apt命令的时候，报错了</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@vultr:~# sudo apt-get upgrade
+E: Dynamic MMap ran out of room. Please increase the size of APT::Cache-Start. Current value: 42991616. <span class="o">(</span>man <span class="m">5</span> apt.conf<span class="o">)</span>
+Reading package lists... Error!
+E: Dynamic MMap ran out of room. Please increase the size of APT::Cache-Start. Current value: 42991616. <span class="o">(</span>man <span class="m">5</span> apt.conf<span class="o">)</span>
+E: Error occurred <span class="k">while</span> processing r-cran-futile.logger <span class="o">(</span>NewFileVer1<span class="o">)</span>
+E: Problem with MergeList /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_universe_binary-i386_Packages
+E: The package lists or status file could not be parsed or opened.
+</code></pre></div><p>Google了下，说是没有swap分区，查看一下果然如此。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@vultr:~# free -h
+              total        used        free      shared  buff/cache   available
+Mem:           985M        115M        518M        2.1M        350M        730M
+Swap:            0B          0B          0B
+</code></pre></div><p>创建swap文件，swap文件的大小一般是内存的2倍，我的内存1G，那这里就新建一个2G的swap文件</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo fallocate -l 2G /swapfile
+</code></pre></div><p>给swap文件赋予root用户权限</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo chmod <span class="m">600</span> /swapfile
+</code></pre></div><p>将文件标记为交换空间</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@vultr:~# sudo mkswap /swapfile
+Setting up swapspace version 1, <span class="nv">size</span> <span class="o">=</span> <span class="m">2</span> GiB <span class="o">(</span><span class="m">2147479552</span> bytes<span class="o">)</span>
+no label, <span class="nv">UUID</span><span class="o">=</span>697c0490-f0a3-4f30-8e6e-672a562154ab
+</code></pre></div><p>初始化分区</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo swapon /swapfile
+</code></pre></div><p><code>free -h</code>再次查看下</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@vultr:~# free -h
+              total        used        free      shared  buff/cache   available
+Mem:           985M        115M        515M        2.1M        354M        730M
+Swap:          2.0G          0B        2.0G
+</code></pre></div><p>此时再执行<code>sudo apt-get upgrade</code>就不会报错了</p>
+<p>但是，此时的swap分区只是暂时的，服务器重启就会失效。如何永久新增swap分区呢？</p>
+<p>备份/etc/fstab文件</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo cp /etc/fstab /etc/fstab.bak
+</code></pre></div><p>永久保留交换文件</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">&#39;/swapfile none swap sw 0 0&#39;</span> <span class="p">|</span> sudo tee -a /etc/fstab
+</code></pre></div><p>合理调整swappiness参数</p>
+<p>查看当前的swappiness值</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@vultr:~# cat /proc/sys/vm/swappiness
+<span class="m">60</span>
+</code></pre></div><p>对于桌面系统来说，60不是一个糟糕的数值，对于服务器来说，最好是设置的非常靠近0。我们可以通过sysctl命令调整这个数值。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@vultr:~# sudo sysctl vm.swappiness<span class="o">=</span><span class="m">10</span>
+vm.swappiness <span class="o">=</span> <span class="m">10</span>
+</code></pre></div><p>若想要重启生效</p>
+<p>在<code>/etc/sysctl.conf</code>末尾添加<code>vm.swappiness=10</code></p>
+<h2 id="参考">参考</h2>
+<p><a href="https://blog.csdn.net/u010429286/article/details/79219230">https://blog.csdn.net/u010429286/article/details/79219230</a></p>
+<p><a href="https://blog.csdn.net/qq_35976351/article/details/79363760">https://blog.csdn.net/qq_35976351/article/details/79363760</a></p>
+<h2 id="给大家推荐一个好用的vps">给大家推荐一个好用的VPS</h2>
+<p><a href="https://www.vultr.com/?ref=7324004">https://www.vultr.com</a></p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="https://1019.fun/tags/linux/">linux</a>
+                                    
+                                    <a href="https://1019.fun/tags/swap/">swap</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="doc_comments"></div>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://varkai.com">Designed by VarKai,</a>
+        <a href="http://www.gohugo.io/">Proudly published with Hugo</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>Copyright © 2020 1019.fun All rights reserved.</span>
+    </div>
+</footer>
+    <script src="https://1019.fun/js/jquery-3.5.1.min.js"></script>
+<link href="https://1019.fun/css/fancybox.min.css" rel="stylesheet">
+<script src="https://1019.fun/js/fancybox.min.js"></script>
+<script src="https://1019.fun/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>

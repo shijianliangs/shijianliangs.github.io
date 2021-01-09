@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aop on 壹零壹玖</title>
+    <link>https://1019.fun/tags/aop/</link>
+    <description>Recent content in aop on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/aop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AOP</title>
+      <link>https://1019.fun/posts/aop/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/aop/</guid>
+      <description>1.使用注解方式配置AOP applicationContext-aop.xml
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;beans xmlns=&amp;#34;http://www.springframework.org/schema/beans&amp;#34; xmlns:xsi=&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34; xmlns:context=&amp;#34;http://www.springframework.org/schema/context&amp;#34; xmlns:aop=&amp;#34;http://www.springframework.org/schema/aop&amp;#34; xsi:schemaLocation=&amp;#34;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd&amp;#34;&amp;gt; &amp;lt;!-- 配置自动扫描的包 --&amp;gt; &amp;lt;context:component-scan base-package=&amp;#34;com.study.spring2.aop.impl&amp;#34;/&amp;gt; &amp;lt;!-- 使 Aspect 注解起作用：自动为匹配的类生成代理对象 --&amp;gt; &amp;lt;aop:aspectj-autoproxy/&amp;gt; &amp;lt;/beans&amp;gt; Calculator.java
+package com.study.spring2.aop.impl; public interface Calculator { int add(int i, int j); int sub(int i, int j); int mul(int i, int j); int div(int i, int j); } CalculatorImpl.java
+package com.study.spring2.aop.impl; import org.springframework.stereotype.Component; @Component(value = &amp;#34;calculator&amp;#34;) public class CalculatorImpl implements Calculator { @Override public int add(int i, int j) { return i + j; } @Override public int sub(int i, int j) { return i - j; } @Override public int mul(int i, int j) { return i * j; } @Override public int div(int i, int j) { return i / j; } } LoggingAspect.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>launchpad on 壹零壹玖</title>
+    <link>https://1019.fun/tags/launchpad/</link>
+    <description>Recent content in launchpad on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/launchpad/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mac的launchpad设置</title>
+      <link>https://1019.fun/posts/mac%E7%9A%84launchpad%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/mac%E7%9A%84launchpad%E8%AE%BE%E7%BD%AE/</guid>
+      <description>设置 Launchpad 列数 defaults write com.apple.dock springboard-columns -int X 设置 Launchpad 行数 defaults write com.apple.dock springboard-rows -int Y 设置之后需要重启 killall Dock </description>
+    </item>
+    
+  </channel>
+</rss>

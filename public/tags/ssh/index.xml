@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh on 壹零壹玖</title>
+    <link>https://1019.fun/tags/ssh/</link>
+    <description>Recent content in ssh on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ssh免密登录</title>
+      <link>https://1019.fun/posts/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</guid>
+      <description>  生成公钥
+ssh-keygen   仅需将机器A的ssh公钥文件安装到机器B上，在机器A的终端执行
+ssh-copy-id user@xxx.xxx.xxx.xxx   之后从机器A登录机器B，就无需再输入密码了
+ssh user@xxx.xxx.xxx.xxx   </description>
+    </item>
+    
+  </channel>
+</rss>

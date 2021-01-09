@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scp on 壹零壹玖</title>
+    <link>https://1019.fun/tags/scp/</link>
+    <description>Recent content in scp on 壹零壹玖</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://1019.fun/tags/scp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>scp</title>
+      <link>https://1019.fun/posts/scp/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://1019.fun/posts/scp/</guid>
+      <description>用于Linux之间复制文件和目录。（需要有对应的读写权限）
+复制本地文件到远程服务器 scp /local_path/local_file.txt remote_user@remote_ip:/remote_path/ 复制本地文件夹到远程服务器 scp -r /local_path/local_dir/ remote_user@remote_ip:/remote_path/ 复制远程文件到本地 scp remote_user@remote_ip:/remote_path/remote_file.txt /local_path/ 复制远程文件夹到本地 scp -r remote_user@remote_ip:/remote_path/remote_dir/ /local_path/ </description>
+    </item>
+    
+  </channel>
+</rss>
